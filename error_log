@@ -1,0 +1,11 @@
+[30-Jun-2018 07:04:14 UTC] PHP Fatal error:  Call to a member function editKaryawan() on null in /home/umliumco/demo.cv-sudirman.com/application/controllers/admin/Karyawan.php on line 119
+[11-Jul-2018 07:27:04 UTC] PHP Fatal error:  Call to a member function editKaryawan() on null in /home/umliumco/demo.cv-sudirman.com/application/controllers/admin/Karyawan.php on line 119
+[11-Jul-2018 07:27:19 UTC] PHP Fatal error:  Call to a member function editKaryawan() on null in /home/umliumco/demo.cv-sudirman.com/application/controllers/admin/Karyawan.php on line 119
+[11-Jul-2018 07:27:30 UTC] PHP Fatal error:  Call to a member function editKaryawan() on null in /home/umliumco/demo.cv-sudirman.com/application/controllers/admin/Karyawan.php on line 119
+[11-Jul-2018 07:27:42 UTC] PHP Fatal error:  Call to a member function editKaryawan() on null in /home/umliumco/demo.cv-sudirman.com/application/controllers/admin/Karyawan.php on line 119
+[11-Jul-2018 07:27:49 UTC] PHP Fatal error:  Call to a member function editKaryawan() on null in /home/umliumco/demo.cv-sudirman.com/application/controllers/admin/Karyawan.php on line 119
+[11-Jul-2018 07:28:27 UTC] PHP Fatal error:  Call to a member function editKaryawan() on null in /home/umliumco/demo.cv-sudirman.com/application/controllers/admin/Karyawan.php on line 119
+[11-Jul-2018 07:28:51 UTC] PHP Fatal error:  Call to a member function editKaryawan() on null in /home/umliumco/demo.cv-sudirman.com/application/controllers/admin/Karyawan.php on line 119
+[11-Jul-2018 07:31:31 UTC] PHP Fatal error:  Call to a member function editKaryawan() on null in /home/umliumco/demo.cv-sudirman.com/application/controllers/admin/Karyawan.php on line 130
+[12-Jul-2018 00:23:33 UTC] PHP Fatal error:  Call to a member function editKaryawan() on null in /home/umliumco/demo.cv-sudirman.com/application/controllers/admin/Karyawan.php on line 126
+[15-Jul-2018 18:17:15 UTC] PHP Fatal error:  Call to a member function industri_besar() on null in /home/umliumco/demo.cv-sudirman.com/application/controllers/admin/Dashboard.php on line 9
