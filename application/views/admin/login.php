@@ -26,7 +26,7 @@
 <div class="row text-center ">
 <div class="col-md-12">
     <br>
-    <h2><img src="<?php echo base_url(); ?>assets/images/logo-putih.png" width="250px"></h2>
+    <h2><img src="<?php echo base_url(); ?>assets2/images/bpa.png" width="250px"></h2>
     <br>
 </div>
 </div>

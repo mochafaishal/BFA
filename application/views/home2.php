@@ -54,7 +54,6 @@ $karyawan = $this->mKaryawan->listKaryawan();
 <!--[if lt IE 9]>
 <script src="<?php echo base_url(); ?>assets2/js/respond.min.js"></script>
 <![endif]-->
-
 </head>
 
 <nav class="colorlib-nav" role="navigation">
@@ -89,7 +88,7 @@ $karyawan = $this->mKaryawan->listKaryawan();
 <aside id="colorlib-hero">
   <div class="flexslider">
     <ul class="slides">
-      <li style="background-image: url(<?php echo base_url(); ?>assets2/images/building-2.jpg); ">
+      <li style="background-image: url(<?php echo base_url(); ?>assets2/images/37.jpg); ">
         <div class="overlay"></div>
         <div class="container-fluid">
           <div class="row">
@@ -102,14 +101,14 @@ $karyawan = $this->mKaryawan->listKaryawan();
           </div>
         </div>
       </li>
-      <li style="background-image: url(<?php echo base_url(); ?>assets2/images/11.jpg);">
+      <li style="background-image: url(<?php echo base_url(); ?>assets2/images/38.jpg);">
         <div class="overlay"></div>
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
               <div class="slider-text-inner text-center">
                 <h2>Badan Pengelola Aset</h2>
-                <h1>BPA KM UII (page2)</h1>
+                <h1>BPA KM UII</h1>
               </div>
             </div>
           </div>
@@ -122,7 +121,7 @@ $karyawan = $this->mKaryawan->listKaryawan();
             <div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
               <div class="slider-text-inner text-center">
                 <h2>Badan Pengelola Aset</h2>
-                <h1>BPA KM UII (page3)</h1>
+                <h1>BPA KM UII</h1>
               </div>
             </div>
           </div>
@@ -174,7 +173,7 @@ $karyawan = $this->mKaryawan->listKaryawan();
     <div class="row">
       <div class="col-md-4 col-md-push-4 animate-box colorlib-heading animate-box">
         <span class="sm">Welcome!</span>
-        <h2><span class="thin">Secrets of Success</span> <span class="thick">of Our Projects</span></h2>
+        <h2><span class="thin">BPA (Badan Pengelola Aset )</span> <span class="thick">KM UII</span></h2>
       </div>
       <div class="col-md-4 col-md-pull-4 animate-box">
         <div class="box text-center">
@@ -184,7 +183,8 @@ $karyawan = $this->mKaryawan->listKaryawan();
         </div>
       </div>
       <div class="col-md-4 animate-box">
-        <p>Since 1980 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+<p>BPA (Badan Pengelola Aset ) KM UII adalah sebuah organisasi yang telah berkembang yang awal mulanya disebut Tim Kerja Pengelola Aset SCC UII yang pertama kali dibentuk tahun 2014. BPA KM UII dibentuk didasari kepentingan jangka Panjang Lembaga yaitu dalam upaya mewujudkan kemandirian Lembaga KM UII, serta proses perbaikan sistem kelembagaan sehingga dapat meningkatkan tata kelola organisasi .Usaha BPA yang awal mulanya hanya mengandalkan penyewaan SCC , perkembangan merambah pada usaha-usaha lain diantaranya pengelolaan jas almamater, layanan sistem informasi ,dan usaha strategis lainnya.
+</p>
       </div>
     </div>
   </div>
@@ -195,45 +195,44 @@ $karyawan = $this->mKaryawan->listKaryawan();
     <div class="row">
       <div class="col-md-4 animate-box colorlib-heading animate-box">
         <span class="sm">Works</span>
-        <h2><span class="thin">Our Done</span> <span class="thick">Projects</span></h2>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-        <p><a href="project.html">View All Projects <i class="icon-arrow-right3"></i></a></p>
+        <h2><span class="thin">Kegiatan</span> <span class="thick">BFA UII</span></h2>
+        <p>berikut adalah beberapa kegiatan yang sudah terlaksanan di BPA UII.</p>
       </div>
       <div class="col-md-7 col-md-push-1">
         <div class="row">
           <div class="col-md-12 animate-box">
             <div class="owl-carousel owl-carousel2 project-wrap">
               <div class="item">
-                <a href="images/building-1.jpg" class="project image-popup-link" style="background-image: url(<?php echo base_url(); ?>assets2/images/building-1.jpg); ">
+                <a href="" class="project image-popup-link" style="background-image: url(<?php echo base_url(); ?>assets2/images/35.jpg); ">
                   <div class="desc-t">
                     <div class="desc-tc">
                       <div class="desc">
-                        <h3><span><small>1</small></span> California Mega Mall</h3>
-                        <p>Even the all-powerful Pointing has no control</p>
+                        <h3><span><small>1</small></span> LDKO LEM FTI UII</h3>
+                        <p>Kegiatan LDKO LEM FTI UII sedang Berlangsung</p>
                       </div>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="item">
-                <a href="images/building-2.jpg" class="project image-popup-link" style="background-image: url(<?php echo base_url(); ?>assets2/images/building-2.jpg) ">
+                <a  class="project image-popup-link" style="background-image: url(<?php echo base_url(); ?>assets2/images/32.jpg) ">
                   <div class="desc-t">
                     <div class="desc-tc">
                       <div class="desc">
-                        <h3><span><small>2</small></span> Commercial Building</h3>
-                        <p>Even the all-powerful Pointing has no control</p>
+                        <h3><span><small>2</small></span> Kamar Para Peserta</h3>
+                        <p>Kamar bagi peserta kegiatan yang rapih dan nyaman</p>
                       </div>
                     </div>
                   </div>
                 </a>
               </div>
               <div class="item">
-                <a href="images/building-3.jpg" class="project image-popup-link" style="background-image: url(<?php echo base_url(); ?>assets2/images/building-3.jpg);">
+                <a href="images/34.jpg" class="project image-popup-link" style="background-image: url(<?php echo base_url(); ?>assets2/images/34.jpg);">
                   <div class="desc-t">
                     <div class="desc-tc">
                       <div class="desc">
-                        <h3><span><small>3</small></span> Miami Private Apartment</h3>
-                        <p>Even the all-powerful Pointing has no control</p>
+                        <h3><span><small>3</small></span> Sambutan oleh pembicara</h3>
+                        <p>Pembicara LDKO sedang melakukan seminar mengenai kepemimpinan</p>
                       </div>
                     </div>
                   </div>
@@ -242,35 +241,6 @@ $karyawan = $this->mKaryawan->listKaryawan();
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(<?php echo base_url(); ?>assets2/images/cover_img_1.jpg); " data-stellar-background-ratio="0.5">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-    </div>
-    <div class="row">
-      <div class="col-md-3 text-center animate-box">
-        <span class="icon"><i class="flaticon-skyline"></i></span>
-        <span class="colorlib-counter js-counter" data-from="0" data-to="1539" data-speed="5000" data-refresh-interval="50"></span>
-        <span class="colorlib-counter-label">Projects</span>
-      </div>
-      <div class="col-md-3 text-center animate-box">
-        <span class="icon"><i class="flaticon-engineer"></i></span>
-        <span class="colorlib-counter js-counter" data-from="0" data-to="3653" data-speed="5000" data-refresh-interval="50"></span>
-        <span class="colorlib-counter-label">Employees</span>
-      </div>
-      <div class="col-md-3 text-center animate-box">
-        <span class="icon"><i class="flaticon-architect-with-helmet"></i></span>
-        <span class="colorlib-counter js-counter" data-from="0" data-to="5987" data-speed="5000" data-refresh-interval="50"></span>
-        <span class="colorlib-counter-label">Constructor</span>
-      </div>
-      <div class="col-md-3 text-center animate-box">
-        <span class="icon"><i class="flaticon-worker"></i></span>
-        <span class="colorlib-counter js-counter" data-from="0" data-to="3999" data-speed="5000" data-refresh-interval="50"></span>
-        <span class="colorlib-counter-label">Partners</span>
       </div>
     </div>
   </div>
@@ -281,7 +251,7 @@ $karyawan = $this->mKaryawan->listKaryawan();
     <div class="row">
       <div class="col-md-4 animate-box colorlib-heading animate-box">
         <span class="sm">What We Do?</span>
-        <h2><span class="thin">We Offer</span> <span class="thick">Services</span></h2>
+        <h2><span class="thin">Tata Cara</span> <span class="thick">Peminjaman</span></h2>
         <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
       </div>
       <div class="col-md-8">
@@ -290,69 +260,81 @@ $karyawan = $this->mKaryawan->listKaryawan();
             <div class="col-md-6 animate-box">
               <div class="services">
                 <span class="icon">
-                  <i class="flaticon-engineer"></i>
+                  <img src="<?php echo base_url(); ?>assets2/images/one.png" alt="">
                 </span>
                 <div class="desc">
-                  <h3>General Constructing</h3>
-                  <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+                  <h3>Cek Jadwal</h3>
+                  <p>Melihat jadwal yang tertera pada website BPA KM UII </p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 animate-box">
               <div class="services">
                 <span class="icon">
-                  <i class="flaticon-engineering"></i>
+                  <img src="<?php echo base_url(); ?>assets2/images/two.png" alt="">
                 </span>
                 <div class="desc">
-                  <h3>Building Modeling</h3>
-                  <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+                  <h3>Hubungi</h3>
+                  <p>Menghubungi CP dari pengelola SCC UII</p>
                   </div>
               </div>
             </div>
             <div class="col-md-6 animate-box">
               <div class="services">
                 <span class="icon">
-                  <i class="flaticon-skyline"></i>
+                  <img src="<?php echo base_url(); ?>assets2/images/three.png" alt="">
                 </span>
                 <div class="desc">
-                  <h3>Design Build</h3>
-                  <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+                  <h3>Survey</h3>
+                  <p>Survey Lokasi (opsional)</p>
                   </div>
               </div>
             </div>
             <div class="col-md-6 animate-box">
               <div class="services">
                 <span class="icon">
-                  <i class="flaticon-crane"></i>
+                  <img src="<?php echo base_url(); ?>assets2/images/four.png" alt="">
                 </span>
                 <div class="desc">
-                  <h3>Construction Services</h3>
-                  <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+                  <h3>Konfirmasi</h3>
+                  <p>Konfirmasi tanggal peminjaman</p>
                   </div>
               </div>
             </div>
             <div class="col-md-6 animate-box">
               <div class="services">
                 <span class="icon">
-                  <i class="flaticon-sketch"></i>
+                  <img src="<?php echo base_url(); ?>assets2/images/five.png" alt="">
                 </span>
                 <div class="desc">
-                  <h3>Pre-Construction Design</h3>
-                  <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+                  <h3>Bayar DP</h3>
+                  <p>Pembayaran DP peminjaman minimal sebesar 30% dari total penyewaan</p>
                   </div>
               </div>
             </div>
             <div class="col-md-6 animate-box">
               <div class="services">
                 <span class="icon">
-                  <i class="flaticon-conveyor"></i>
+                  <img src="<?php echo base_url(); ?>assets2/images/six.png" alt="">
                 </span>
                 <div class="desc">
-                  <h3>Construction Management</h3>
-                  <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies</p>
+                  <h3>Pelunasan</h3>
+                  <p>Pelunasan minimal h-7 hari sebelum kegiatan</p>
                   </div>
               </div>
             </div>
+            <div class="col-md-6 animate-box">
+              <div class="services">
+                <span class="icon">
+                  <img src="<?php echo base_url(); ?>assets2/images/seven.png" alt="">
+                </span>
+                <div class="desc">
+                  <h3>Siap digunakan</h3>
+                  <p>SCC bisa digunakan </p>
+                  </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -360,45 +342,6 @@ $karyawan = $this->mKaryawan->listKaryawan();
   </div>
 </div>
 
-<div id="colorlib-blog">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 animate-box colorlib-heading animate-box">
-        <span class="sm">Recent Blog</span>
-        <h2><span class="thin">Read</span> <span class="thick">Our Blog</span></h2>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-        <p><a href="blog.html">View All Blog Post <i class="icon-arrow-right3"></i></a></p>
-      </div>
-      <div class="col-md-8">
-        <div class="row">
-          <div class="wrap">
-            <div class="blog-entry animate-box">
-              <a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/blog-1.jpg); "></a>
-              <div class="desc">
-                <span>&mdash; 20 Jan, 2017 </span>
-                <h2><a href="blog.html">Construction was awarded with “The Best Construction Company” prize</a></h2>
-              </div>
-            </div>
-            <div class="blog-entry animate-box">
-              <a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url(); ?> assets2/images/blog-2.jpg); "></a>
-              <div class="desc">
-                <span>&mdash; 20 Jan, 2017 </span>
-                <h2><a href="blog.html">New Doublered Residence Facility Occupied and Second to Begin this Month</a></h2>
-              </div>
-            </div>
-            <div class="blog-entry animate-box">
-              <a href="blog.html" class="blog-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/blog-3.jpg); "></a>
-              <div class="desc">
-                <span>&mdash; 20 Jan, 2017 </span>
-                <h2><a href="blog.html">New Saint Michael’s College Residence Hall Buzzing with Student Activity</a></h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <div id="colorlib-about">
   <div class="container">
 
@@ -413,10 +356,10 @@ $karyawan = $this->mKaryawan->listKaryawan();
             <div class="col-md-4 text-center animate-box">
               <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
                 <a href="#" class="desc">
-                  <h3>John Miller</h3>
-                  <span>Lead Engineer</span>
+                  <h3>DANUR LINTANG</h3>
+                  <span>SATFF BPA</span>
                   <div class="parag">
-                    <p>Even the all-powerful Pointing has no control about the blind texts</p>
+                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
                   </div>
                 </a>
               </div>
@@ -424,21 +367,60 @@ $karyawan = $this->mKaryawan->listKaryawan();
             <div class="col-md-4 text-center animate-box">
               <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
                 <a href="#" class="desc">
-                  <h3>John Miller</h3>
-                  <span>Lead Engineer</span>
+                  <h3>DANUR LINTANG</h3>
+                  <span>STAFF BPA</span>
                   <div class="parag">
-                    <p>Even the all-powerful Pointing has no control about the blind texts</p>
+                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
                   </div>
                 </a>
               </div>
             </div>
             <div class="col-md-4 text-center animate-box">
-              <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person2.jpg);">
+              <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
                 <a href="#" class="desc">
-                  <h3>Brian Smith</h3>
-                  <span>Architect</span>
+                  <h3>DANUR LINTANG</h3>
+                  <span>STAFF BPA</span>
                   <div class="parag">
-                    <p>Even the all-powerful Pointing has no control about the blind texts</p>
+                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 ">
+        <div class="row">
+          <div class="wrap-2">
+            <div class="col-md-4 text-center animate-box">
+              <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
+                <a href="#" class="desc">
+                  <h3>DANUR LINTANG</h3>
+                  <span>STAFF BPA</span>
+                  <div class="parag">
+                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 text-center animate-box">
+              <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
+                <a href="#" class="desc">
+                  <h3>DANUR LINTANG</h3>
+                  <span>STAFF BPA</span>
+                  <div class="parag">
+                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 text-center animate-box">
+              <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
+                <a href="#" class="desc">
+                  <h3>DANUR LINTANG</h3>
+                  <span>STAFF BPA</span>
+                  <div class="parag">
+                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
                   </div>
                 </a>
               </div>
@@ -447,6 +429,7 @@ $karyawan = $this->mKaryawan->listKaryawan();
         </div>
       </div>
 
+
   </div>
 </div>
 <div id="colorlib-testimony" class="colorlib-light-grey">
@@ -454,7 +437,7 @@ $karyawan = $this->mKaryawan->listKaryawan();
     <div class="row">
       <div class="col-md-4 animate-box colorlib-heading animate-box">
         <span class="sm">Testimonial</span>
-        <h2><span class="thin">What Our</span> <span class="thick">Client Says</span></h2>
+        <h2><span class="thin">Pesan</span> <span class="thick">Pengurus BPA</span></h2>
       </div>
       <div class="col-md-7 col-md-push-1">
         <div class="row animate-box">
@@ -467,8 +450,8 @@ $karyawan = $this->mKaryawan->listKaryawan();
                     <img src="<?php echo base_url(); ?>assets2/images/person1.jpg" alt="user">
                   </figure>
                   <blockquote>
-                    <span>Andrew Field</span>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <span>DANUR LINTANG</span>
+                    <p>BPA adalah badan yang menjunjung tinggi sistem profesionalisme </p>
                   </blockquote>
                 </div>
               </div>
@@ -477,11 +460,11 @@ $karyawan = $this->mKaryawan->listKaryawan();
               <div class="testimony-slide active">
                 <div class="testimony-wrap">
                   <figure>
-                    <img src="<?php echo base_url(); ?>assets2/images/person2.jpg" alt="user">
+                    <img src="<?php echo base_url(); ?>assets2/images/person1.jpg" alt="user">
                   </figure>
                   <blockquote>
-                    <span>Mark Bubble</span>
-                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <span>DANUR LINTANG</span>
+                    <p>BPA adalah badan tempatnya bersih dan nyaman</p>
                   </blockquote>
                 </div>
               </div>
@@ -490,11 +473,11 @@ $karyawan = $this->mKaryawan->listKaryawan();
               <div class="testimony-slide active">
                 <div class="testimony-wrap">
                   <figure>
-                    <img src="<?php echo base_url(); ?>assets2/images/person3.jpg" alt="user">
+                    <img src="<?php echo base_url(); ?>assets2/images/person1.jpg" alt="user">
                   </figure>
                   <blockquote>
-                    <span>Adam Smith</span>
-                    <p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <span>DANUR LINTANG</span>
+                    <p>Dengan harga yang murah dengan kualitas yang baik</p>
                   </blockquote>
                 </div>
               </div>
@@ -540,8 +523,7 @@ $karyawan = $this->mKaryawan->listKaryawan();
     <div class="row row-pb-md">
       <div class="col-md-3 colorlib-widget">
         <h4>About Company</h4>
-        <p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-        <p>
+        <p>BPA (Badan Pengelola Aset ) KM UII adalah sebuah organisasi yang telah berkembang yang awal mulanya disebut Tim Kerja Pengelola Aset SCC UII yang pertama kali dibentuk tahun 2014. </p>
           <ul class="colorlib-social-icons">
             <li><a href="#"><i class="icon-twitter"></i></a></li>
             <li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -552,32 +534,18 @@ $karyawan = $this->mKaryawan->listKaryawan();
       </div>
       <div class="col-md-3 col-md-push-1">
         <h4>Recent Blog</h4>
-        <ul class="colorlib-footer-links">
-          <li>
-            <span>&mdash; 20 Jan, 2017</span>
-            <a href="#">Results of Annual General Meeting</a>
-          </li>
-          <li>
-            <span>&mdash; 19 Jan, 2017</span>
-            <a href="#">Construction was awarded with “The Best Construction Company” prize</a>
-          </li>
-          <li>
-            <span>&mdash; 18 Jan, 2017</span>
-            <a href="#">New Saint Michael’s College Residence Hall Buzzing with Student Activity</a>
-          </li>
-        </ul>
+
       </div>
       <div class="col-md-3 col-md-push-1 colorlib-widget">
         <h4>Information</h4>
         <p>
           <ul class="colorlib-footer-links">
-            <li><a href="#"><i class="icon-check"></i> Our Company</a></li>
-            <li><a href="#"><i class="icon-check"></i> Certification</a></li>
-            <li><a href="#"><i class="icon-check"></i> Our services</a></li>
-            <li><a href="#"><i class="icon-check"></i> Career</a></li>
-            <li><a href="#"><i class="icon-check"></i> Core Values</a></li>
-            <li><a href="#"><i class="icon-check"></i> Company History</a></li>
-            <li><a href="#"><i class="icon-check"></i> FAQ</a></li>
+            <li><a href="#"><i class="icon-check"></i> Home</a></li>
+            <li><a href="#"><i class="icon-check"></i> Tentang Kami</a></li>
+            <li><a href="#"><i class="icon-check"></i> Jadwal</a></li>
+            <li><a href="#"><i class="icon-check"></i> Galeri</a></li>
+            <li><a href="#"><i class="icon-check"></i> Kontak</a></li>
+
           </ul>
         </p>
       </div>

@@ -49,7 +49,7 @@
 <!-- Google Map -->
 <section class="contact-area">
 <div class="col-md-12">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.1007190416562!2d110.68483991397751!3d-7.672320494468879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a40eb5e4b7261%3A0xe9392e94b4382996!2sCV.+Sudirman!5e0!3m2!1sid!2sid!4v1531356018837" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18811.656222282625!2d110.42575543379866!3d-7.611538999049258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x43e2ed5359314299!2sSCC+UII!5e0!3m2!1sid!2sid!4v1532237637193" width="1450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 </section>
 
