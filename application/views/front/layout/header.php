@@ -29,22 +29,22 @@
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeInUp">
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="dropdown active">
+                                <li class="dropdown <?php if ($active == 'home') echo 'active'; ?>">
                                     <a href="<?php echo base_url('home'); ?>">Home </a>
                                 </li>
-                                <li><a href="<?php echo base_url('about'); ?>">TENTANG KAMI</a></li>
-                                <li class="dropdown">
+                                <li <?php if ($active == 'about') echo 'class="active"'; ?>><a href="<?php echo base_url('about'); ?>">TENTANG KAMI</a></li>
+                                <li class="dropdown <?php if ($active == 'jadwal') echo 'active'; ?>">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JADWAL<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <li class="dropdown">
+                                <li class="dropdown <?php if ($active == 'galeri') echo 'active'; ?>">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GALERI<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="<?php echo base_url('photo'); ?>">Foto</a>
                                         </li>
                                         <li><a href="<?php echo base_url('video'); ?>">Video</a>
+                                        </li>
                                     </ul>
-                                    </li>
                                 </li>
-                                <li>
+                                <li <?php if ($active == 'kontak') echo 'class="active"'; ?>>
                                     <a href="<?php echo base_url('contact'); ?>">KONTAK</a>
                                 </li>
                             </ul>

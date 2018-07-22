@@ -11,6 +11,7 @@ class About extends CI_Controller {
         $pesandirektur = $this->mTentangKami->listPesanDirektur();
 
 		$data = array(  'title'	 => 'About',
+                        'active' => 'about',
                         'site'   => $site,
                         'sekilasperusahaan' => $sekilasperusahaan,
                         'visimisi' => $visimisi,

@@ -7,6 +7,7 @@ class Contact extends CI_Controller {
 	{
         $site  		= $this->mConfig->list_config();
 		$data = array( 'title'	=> 'Home',
+                      'active' => 'kontak',
                     'site'   => $site,
 				       'isi'	=> 'front/contact/contact');
 		$this->load->view('front/layout/wrapper',$data);

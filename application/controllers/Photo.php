@@ -37,6 +37,7 @@ class Photo extends CI_Controller {
 
 		$data = array( 'title'	=> 'Galeri Foto',
                        'site'   => $site,
+                       'active' => 'galeri',
                        'foto'   => $this->mGaleri->read('galeri_foto','id_galeri_foto',$limit,$offset),
                        'pagination' => $this->pagination->create_links(),
                        'isi'	=> 'front/gallery/photo');

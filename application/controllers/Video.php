@@ -36,6 +36,7 @@ class Video extends CI_Controller {
             $offset = (int) $this->uri->segment(2);
 
 		$data = array( 'title'	=> 'Galeri Video',
+                      'active' => 'galeri',
                        'site'   => $site,
                        'video'   => $this->mGaleri->read('galeri_video','id_galeri_video',$limit,$offset),
                        'pagination' => $this->pagination->create_links(),
