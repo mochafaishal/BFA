@@ -47,19 +47,7 @@
                   </div>
               </div>
           </div>
-          <div class="row">
-              <div class="col-md-6">
-                  <div class="about-three-col">
-                      <img src="<?php echo base_url('assets/upload/image/'.$pesandirektur['image']);?>" alt="">
-                  </div>
-              </div>
-              <div class="col-md-6">
-                 <div class="about-three-col">
-                     <h3>Pesan Direktur</h3>
-                     <p class="text-justify"><?php echo $pesandirektur['deskripsi'] ?></p>
-                 </div>
-              </div>
-          </div>
+
       </div>
   </section>
 

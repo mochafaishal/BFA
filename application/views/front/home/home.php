@@ -24,7 +24,7 @@ $sekilasperusahaan = $this->mTentangKami->listSekilasPerusahaan();
                    ?>
                   <!-- First slide -->
                   <div class="item active slide-<?php echo $i ?> text-left">
-                      
+
                      <img src="<?php echo base_url('assets/upload/image/'.$slider['image']);?>">
                       <div class="carousel-caption">
                           <p data-animation="animated fadeInUp">
@@ -40,7 +40,7 @@ $sekilasperusahaan = $this->mTentangKami->listSekilasPerusahaan();
                   <?php }else{ ?>
 
                   <div class="item slide-<?php echo $i ?> text-right">
-                      
+
                       <img src="<?php echo base_url('assets/upload/image/'.$slider['image']);?>">
                       <div class="carousel-caption">
                           <p data-animation="animated fadeInUp">
@@ -160,7 +160,7 @@ $sekilasperusahaan = $this->mTentangKami->listSekilasPerusahaan();
           </div>
       </div>
   </section>
-  
+
 <!-- Separator Start -->
   <section class="separator-area">
       <div class="container">
@@ -190,7 +190,7 @@ $sekilasperusahaan = $this->mTentangKami->listSekilasPerusahaan();
               </div>
           </div>
           <div class="row">
-              
+
               <?php $j=0; foreach ($produk as $produk){ ?>
 
               <div class="col-md-4 col-sm-6 fw600 projects-title-col">
@@ -238,7 +238,7 @@ $sekilasperusahaan = $this->mTentangKami->listSekilasPerusahaan();
                 <div class="clearfix"></div>
             </div>
 
-              <?php 
+              <?php
               $j++;
               if ($j == 9) break; } ?>
 
@@ -256,7 +256,7 @@ $sekilasperusahaan = $this->mTentangKami->listSekilasPerusahaan();
                       <div class="counter-icon"><i class="icofont icofont-files"></i>
                       </div>
                         <h1>
-                            ~ 
+                            ~
                         <script language="JavaScript">var fhsh = document.createElement('script');var fhs_id_h = "3311759";
                         fhsh.src = "//freehostedscripts.net/ocount.php?site="+fhs_id_h+"&name=Pengunjung Web&a=1";
                         document.head.appendChild(fhsh);document.write("<span id='h_"+fhs_id_h+"'></span>");
