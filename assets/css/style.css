@@ -607,7 +607,7 @@ input:-moz-placeholder {
 }
 .header-navbar .navbar-default .navbar-nav>.active>a,
 .header-navbar .navbar-default .navbar-nav>li>a:hover {
-    color: #008FD7;
+    color: #fff000;
     background-color: transparent;
 }
 .header-navbar .navbar-default .navbar-nav>li>a:focus,
@@ -623,7 +623,7 @@ input:-moz-placeholder {
 .header-navbar .navbar-nav .dropdown-menu {
     padding: 0;
     border: none;
-    border-top: 3px solid #008FD7;
+    border-top: 3px solid #fff000;
     border-radius: 0;
     margin-left: 20px;
 }

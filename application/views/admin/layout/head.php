@@ -10,7 +10,7 @@ $site = $this->mConfig->list_config();
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Administrator | CV Sudirman</title>
+<title>Administrator | BPA KM UII</title>
 <link href="<?php echo base_url('assets/upload/image/'.$site['icon']) ?>" rel="shortcut icon" type="image/png">
 <!-- BOOTSTRAP STYLES-->
 <link href="<?php echo base_url() ?>assets/admin/assets/css/bootstrap.css" rel="stylesheet" />

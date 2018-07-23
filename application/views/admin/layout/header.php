@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
-	<a class="navbar-brand" href="<?php echo base_url('admin/dasbor') ?>">CV. Sudirman</a>
+	<a class="navbar-brand" href="<?php echo base_url('admin/dasbor') ?>">BPA UII</a>
 </div>
 <div style="color: white;
 padding: 15px 50px 5px 50px;
