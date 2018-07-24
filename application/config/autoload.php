@@ -137,7 +137,7 @@ $autoload['model'] = array( 'Config_model' 		=> 'mConfig',
 							'Produk_model' 		=> 'mProduk',
 							'Galeri_model' 		=> 'mGaleri',
 							'Slider_model' 		=> 'mSlider',
-							'Karyawan_model' 	=> 'mKaryawan',
+							'Organisasi_model' 	=> 'mOrganisasi',
 							'Kontak_model' 		=> 'mKontak',
 							'Statistik_model' 	=> 'mStats',
 						);

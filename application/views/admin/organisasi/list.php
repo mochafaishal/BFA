@@ -11,7 +11,7 @@ echo validation_errors('<div class="alert alert-success">','</div>');
 
 <!--  Modals-->
 <div class="panel-body">
-<p><a href="<?php echo base_url('admin/karyawan/create') ?>" class="btn btn-primary"><i class="fa fa-plus"></i> Buat Karyawan Baru</a></p>
+<p><a href="<?php echo base_url('admin/organisasi/create') ?>" class="btn btn-primary"><i class="fa fa-plus"></i> Buat organisasi Baru</a></p>
 
 
 
@@ -26,7 +26,7 @@ echo validation_errors('<div class="alert alert-success">','</div>');
     </tr>
 </thead>
 <tbody>
-	<?php $i=1; foreach($Karyawan as $list) { ?>
+	<?php $i=1; foreach($organisasi as $list) { ?>
     <tr class="odd gradeX">
         <td><?php echo $i; ?></td>
         <td>
@@ -39,12 +39,12 @@ echo validation_errors('<div class="alert alert-success">','</div>');
         <?php echo substr(strip_tags($list['jabatan']),0,30) ?>
         </td>
         <td class="center">
-        <a href="<?php echo base_url('admin/karyawan/edit/'.$list['id_karyawan']);?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+        <a href="<?php echo base_url('admin/organisasi/edit/'.$list['id_organisasi']);?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
        <!-- View Biz -->
        <!--  Modals-->
-        <button class="btn btn-success" data-toggle="modal" data-target="#View<?php echo $list['id_karyawan']; ?>"><i class="fa fa-eye"></i></button>
+        <button class="btn btn-success" data-toggle="modal" data-target="#View<?php echo $list['id_organisasi']; ?>"><i class="fa fa-eye"></i></button>
 
-        <div class="modal fade" id="View<?php echo $list['id_karyawan']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="View<?php echo $list['id_organisasi']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
               <div class="modal-header">
@@ -66,8 +66,8 @@ echo validation_errors('<div class="alert alert-success">','</div>');
           <tr>
             <td>&nbsp;</td>
             <td>
-            <a href="<?php echo base_url('admin/karyawan/edit/'.$list['id_karyawan']) ?>" class="btn btn-primary">Edit</a>
-            <a href="<?php echo base_url('admin/karyawan/delete/'.$list['id_karyawan']) ?>" class="btn btn-danger">Delete</a>
+            <a href="<?php echo base_url('admin/organisasi/edit/'.$list['id_organisasi']) ?>" class="btn btn-primary">Edit</a>
+            <a href="<?php echo base_url('admin/organisasi/delete/'.$list['id_organisasi']) ?>" class="btn btn-danger">Delete</a>
           </tr>
         </table>
         </div>
@@ -81,7 +81,7 @@ echo validation_errors('<div class="alert alert-success">','</div>');
         </div>
         </div>
         <!-- End Modals-->
-        <a href="<?php echo base_url('admin/karyawan/delete/'.$list['id_karyawan']);?>" class="btn btn-danger" onClick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a>
+        <a href="<?php echo base_url('admin/organisasi/delete/'.$list['id_organisasi']);?>" class="btn btn-danger" onClick="return confirm('Are you sure?')"><i class="fa fa-trash"></i></a>
 
         </td>
     </tr>

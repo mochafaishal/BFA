@@ -5,7 +5,7 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-        $site  		= $this->mConfig->list_config();
+    $site  		= $this->mConfig->list_config();
 		$slider     = $this->mSlider->listSlider();
 
 		$data = array( 'title'	=> 'Home',

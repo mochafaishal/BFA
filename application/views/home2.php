@@ -1,5 +1,5 @@
 <?php
-$karyawan = $this->mKaryawan->listKaryawan();
+$organisasi = $this->mOrganisasi->listOrganisasi();
 ?>
 <head>
 <meta charset="utf-8">
@@ -147,16 +147,16 @@ $karyawan = $this->mKaryawan->listKaryawan();
             <div class="col-md-12">
                 <div class="team-carousel">
 
-                    <?php foreach ($karyawan as $karyawan){ ?>
+                    <?php foreach ($organisasi as $organisasi){ ?>
 
                     <div class="our-team">
                         <div class="team-pic">
-                            <img src="<?php echo base_url('assets/upload/image/'.$karyawan['image']);?>" alt="">
+                            <img src="<?php echo base_url('assets/upload/image/'.$organisasi['image']);?>" alt="">
                         </div>
                         <div class="team-profile">
                             <h3 class="team-title">
-                                <a href="team-details.html"><?php echo $karyawan['nama'];?></a>
-                                <small><?php echo $karyawan['jabatan'];?></small>
+                                <a href="team-details.html"><?php echo $organisasi['nama'];?></a>
+                                <small><?php echo $organisasi['jabatan'];?></small>
                             </h3>
                         </div>
                     </div>

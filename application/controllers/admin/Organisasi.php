@@ -1,16 +1,16 @@
 <?php
   defined('BASEPATH') OR exit('No direct script access allowed');
 
-  class Karyawan extends CI_Controller {
+  class Organisasi extends CI_Controller {
       public function index(){
 
 		$site      = $this->mConfig->list_config();
-		$Karyawan  = $this->mKaryawan->listKaryawan();
+		$organisasi  = $this->mOrganisasi->listOrganisasi();
 
-		$data = array(	'title'			=> 'Management Karyawan - '.$site['namaweb'],
-						'Karyawan'		=> $Karyawan,
+		$data = array(	'title'			=> 'Management Organisasi - '.$site['namaweb'],
+						'organisasi'		=> $organisasi,
 						'site'			=> $site,
-						'isi'			=> 'admin/karyawan/list');
+						'isi'			=> 'admin/organisasi/list');
 		$this->load->view('admin/layout/wrapper',$data);
 	}
 
@@ -30,10 +30,10 @@
 			$this->load->library('upload', $config);
 			if(! $this->upload->do_upload('image')) {
 
-		$data = array(	'title'			=> 'Create Karyawan - '.$site['namaweb'],
+		$data = array(	'title'			=> 'Create organisasi - '.$site['namaweb'],
 						'site'			=> $site,
 						'error'			=> $this->upload->display_errors(),
-						'isi'			=> 'admin/karyawan/create');
+						'isi'			=> 'admin/organisasi/create');
 		$this->load->view('admin/layout/wrapper',$data);
 		}else{
 				$upload_data				= array('uploads' =>$this->upload->data());
@@ -47,28 +47,28 @@
 				$this->image_lib->resize();
 
 				$i = $this->input;
-				$slugKaryawan = url_title($this->input->post('nama'), 'dash', TRUE);
-				$data = array(	'slug_karyawan'	=> $slugKaryawan,
+				$slugOrganisasi = url_title($this->input->post('nama'), 'dash', TRUE);
+				$data = array(	'slug_organisasi'	=> $slugOrganisasi,
 								'nama'			=> $i->post('nama'),
 								'jabatan' 		=> $i->post('jabatan'),
 								'image'			=> $upload_data['uploads']['file_name']
 				 			 );
-				$this->mKaryawan->createkaryawan($data);
+				$this->mOrganisasi->createOrganisasi($data);
 				$this->session->set_flashdata('sukses','Success');
-				redirect(base_url('admin/Karyawan'));
+				redirect(base_url('admin/organisasi'));
 		}}
 		// Default page
-		$data = array(	'title'		=> 'Create Karyawan - '.$site['namaweb'],
+		$data = array(	'title'		=> 'Create Organisasi - '.$site['namaweb'],
 						'site'		=> $site,
-						'isi'		=> 'admin/karyawan/create');
+						'isi'		=> 'admin/organisasi/create');
 		$this->load->view('admin/layout/wrapper',$data);
 	}
 
-	// Edit Karyawan
-	public function edit($id_karyawan) {
+	// Edit Organisasi
+	public function edit($id_organisasi) {
 
-		$Karyawan		= $this->mKaryawan->detailKaryawan($id_karyawan);
-		$endKaryawan	= $this->mKaryawan->endKaryawan();
+		$organisasi		= $this->mOrganisasi->detailOrganisasi($id_organisasi);
+		$endOrganisasi	= $this->mOrganisasi->endOrganisasi();
 
 		// Validation
 		$v = $this->form_validation;
@@ -82,10 +82,10 @@
 			$this->load->library('upload', $config);
 			if(! $this->upload->do_upload('image')) {
 
-		$data = array(	'title'				=> 'Edit Galeri - '.$Karyawan['nama'],
-						'karyawan'			=> $Karyawan,
+		$data = array(	'title'				=> 'Edit Galeri - '.$organisasi['nama'],
+						'organisasi'			=> $organisasi,
 						'error'				=> $this->upload->display_errors(),
-						'isi'				=> 'admin/karyawan/edit');
+						'isi'				=> 'admin/organisasi/edit');
 		$this->load->view('admin/layout/wrapper', $data);
 		}else{
 				$upload_data				= array('uploads' =>$this->upload->data());
@@ -103,43 +103,43 @@
 
 			$i = $this->input;
 
-			unlink('./assets/upload/image/'.$Karyawan['image']);
+			unlink('./assets/upload/image/'.$organisasi['image']);
 
-			$slugKaryawan = $endKaryawan['id_karyawan'].'-'.url_title($i->post('nama'),'dash', TRUE);
-			$data = array(	'id_karyawan'		=> $Karyawan['id_karyawan'],
-							'slug_karyawan'		=> $slugKaryawan,
+			$slugOrganisasi = $endOrganisasi['id_organisasi'].'-'.url_title($i->post('nama'),'dash', TRUE);
+			$data = array(	'id_organisasi'		=> $organisasi['id_organisasi'],
+							'slug_organisasi'		=> $slugOrganisasi,
 							'nama'				=> $i->post('nama'),
 							'jabatan'			=> $i->post('jabatan'),
 							'image'				=> $upload_data['uploads']['file_name']
 							);
-			$this->mKaryawan->editKaryawan($data);
+			$this->mOrganisasi->editOrganisasi($data);
 			$this->session->set_flashdata('sukses','Success');
-			redirect(base_url('admin/Karyawan'));
+			redirect(base_url('admin/organisasi'));
 		}}else{
 			$i = $this->input;
-			$slugKaryawan = $endKaryawan['id_karyawan'].'-'.url_title($i->post('nama'),'dash', TRUE);
-			$data = array(	'id_karyawan'		=> $Karyawan['id_karyawan'],
-							'slug_karyawan'		=> $slugKaryawan,
+			$slugOrganisasi = $endOrganisasi['id_organisasi'].'-'.url_title($i->post('nama'),'dash', TRUE);
+			$data = array(	'id_organisasi'		=> $organisasi['id_organisasi'],
+							'slug_organisasi'		=> $slugOrganisasi,
 							'nama'				=> $i->post('nama'),
 							'jabatan'			=> $i->post('jabatan'),
 							);
-			$this->mKaryawan->editKaryawan($data);
+			$this->mOrganisasi->editOrganisasi($data);
 			$this->session->set_flashdata('sukses','Success');
-			redirect(base_url('admin/Karyawan'));
+			redirect(base_url('admin/organisasi'));
 		}}
 
-		$data = array(	'title'			=> 'Edit Karyawan- '.$Karyawan['nama'],
-		'id_karyawan'		=> $Karyawan['id_karyawan'],
-						'Karyawan'		=> $Karyawan,
-						'isi'			=> 'admin/karyawan/edit');
+		$data = array(	'title'			=> 'Edit Organisasi- '.$organisasi['nama'],
+		'id_organisasi'		=> $organisasi['id_organisasi'],
+						'organisasi'		=> $organisasi,
+						'isi'			=> 'admin/organisasi/edit');
 		$this->load->view('admin/layout/wrapper', $data);
 	}
 
 	// Delete Gallery
-	public function delete($id_karyawan) {
-		$data = array('id_karyawan'	=> $id_karyawan);
-		$this->mKaryawan->deleteKaryawan($data);
+	public function delete($id_organisasi) {
+		$data = array('id_organisasi'	=> $id_organisasi);
+		$this->mOrganisasi->deleteOrganisasi($data);
 		$this->session->set_flashdata('sukses','Success');
-		redirect(base_url('admin/Karyawan'));
+		redirect(base_url('admin/organisasi'));
 	}
 }

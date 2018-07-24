@@ -24,7 +24,8 @@
     </li>
 
     <li><a href="<?php echo base_url('admin/data_user') ?>"><i class="fa fa-users"></i> Data User</a></li>
-    <li><a href="<?php echo base_url('admin/kontak') ?>"><i class="fa fa-envelope-o"></i> Kontak</a></li>
+		<li><a href="<?php echo base_url('admin/organisasi') ?>"><i class="fa fa-users"></i>Struktur Organisasi</a></li>
+		<li><a href="<?php echo base_url('admin/kontak') ?>"><i class="fa fa-envelope-o"></i> Kontak</a></li>
     <li><a href="<?php echo base_url('admin/login/logout') ?>"><i class="fa fa-close"></i> Logout</a></li>
 
 </ul>

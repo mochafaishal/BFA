@@ -76,7 +76,7 @@ if(isset($error)) {
 echo validation_errors('<div class="alert alert-success">','</div>');
 ?>
 
-<form action="<?php echo base_url('admin/karyawan/create') ?>" method="post" enctype="multipart/form-data">
+<form action="<?php echo base_url('admin/organisasi/create') ?>" method="post" enctype="multipart/form-data">
 <div class="col-md-6">
     <div class="form-group">
         <label>Upload Image</label>
@@ -104,7 +104,7 @@ echo validation_errors('<div class="alert alert-success">','</div>');
 <div class="form-group"><br>
 	<input type="submit" name="submit" value="Create" class="btn btn-primary">
     <input type="reset" name="reset" value="Reset" class="btn btn-default">
-    <a href="<?php echo base_url('admin/karyawan/') ?>" class="btn btn-primary">Cancel</a>
+    <a href="<?php echo base_url('admin/organisasi/') ?>" class="btn btn-primary">Cancel</a>
     </div>
 </div>
 

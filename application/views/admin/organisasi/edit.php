@@ -76,31 +76,31 @@ if(isset($error)) {
 echo validation_errors('<div class="alert alert-success">','</div>');
 ?>
 
-<form action="<?php echo base_url('admin/karyawan/edit/'.$Karyawan['id_karyawan']) ?>" method="post" enctype="multipart/form-data">
+<form action="<?php echo base_url('admin/organisasi/edit/'.$organisasi['id_organisasi']) ?>" method="post" enctype="multipart/form-data">
 <div class="col-md-6">
     <div class="form-group">
         <label>Upload Image</label>
       <input type="file" name="image" class="form-control" id="file"><br>
-        <div class="imagePreview"><img src="<?php echo base_url('assets/upload/image/'.$Karyawan['image']) ?>" width="400px" height="300px"></div>
+        <div class="imagePreview"><img src="<?php echo base_url('assets/upload/image/'.$organisasi['image']) ?>" width="400px" height="300px"></div>
     </div>
 </div>
 <div class="col-md-6">
 	<div class="form-group">
         <label>Nama</label>
-        <textarea name="nama" placeholder="nama" class="form-control"><?php echo $Karyawan['nama'] ?></textarea>
+        <textarea name="nama" placeholder="nama" class="form-control"><?php echo $organisasi['nama'] ?></textarea>
     </div>
 </div>
 <div class="col-md-6">
     <div class="form-group">
         <label>Jabatan</label>
-        <textarea id="Jabatan" name="jabatan" placeholder="Jabatan" class="form-control"><?php echo $Karyawan['jabatan'] ?></textarea>
+        <textarea id="Jabatan" name="jabatan" placeholder="Jabatan" class="form-control"><?php echo $organisasi['jabatan'] ?></textarea>
     </div>
 </div>
 <div class="col-md-12">
 <div class="form-group">
 	<input type="submit" name="submit" value="Update" class="btn btn-primary">
     <input type="reset" name="reset" value="Reset" class="btn btn-default">
-    <a href="<?php echo base_url('admin/karyawan/') ?>" class="btn btn-primary">Cancel</a>
+    <a href="<?php echo base_url('admin/organisasi/') ?>" class="btn btn-primary">Cancel</a>
     </div>
 </div>
 
