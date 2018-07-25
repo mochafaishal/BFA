@@ -133,42 +133,6 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
     </div>
 </aside>
 
-<!-- <section class="team-section" style="background-color:#008FD7">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="defult-title text-center">
-                    <h1><span>Our Best Team</span></h1>
-                    <h5><span>CV-SUDIRMAN<span></h5>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="team-carousel">
-
-                    <?php foreach ($organisasi as $organisasi){ ?>
-
-                    <div class="our-team">
-                        <div class="team-pic">
-                            <img src="<?php echo base_url('assets/upload/image/'.$organisasi['image']);?>" alt="">
-                        </div>
-                        <div class="team-profile">
-                            <h3 class="team-title">
-                                <a href="team-details.html"><?php echo $organisasi['nama'];?></a>
-                                <small><?php echo $organisasi['jabatan'];?></small>
-                            </h3>
-                        </div>
-                    </div>
-
-                    <?php } ?>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
 <div id="colorlib-intro">
   <div class="container">
     <div class="row">
@@ -345,12 +309,6 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
 
 <div id="colorlib-about">
   <div class="container">
-
-      <!-- <div class="col-md-4 col-md-push-8 animate-box colorlib-heading animate-box">
-        <span class="sm">Team</span>
-        <h2><span class="thin">Our</span> <span class="thick">Engineers</span></h2>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
-      </div> -->
       <div class="col-md-12 ">
         <div class="row">
           <div class="wrap-2">
@@ -489,9 +447,6 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
     </div>
   </div>
 </div>
-
-
-
 
 <footer id="colorlib-footer" role="contentinfo">
   <div class="container">

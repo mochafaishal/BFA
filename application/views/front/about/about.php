@@ -51,6 +51,26 @@
       </div>
   </section>
 
+    <div class="container">
+         <div class="row about-three-col">
+           <h3>Struktur Organisasi</h3>
+
+           <?php foreach($organisasi as $organisasi_list): ?>
+           <div class="col-md-4">
+             <div class="card mb-4 box-shadow">
+               <img class="card-img-top" src="assets/upload/image/<?php echo $organisasi_list['image']; ?>" alt="Card image cap">
+               <div class="card-body pt-2">
+                 <h5 class="card-title"><?php echo $organisasi_list['nama']; ?></h5>
+                 <p class="card-text">
+                   <?php echo $organisasi_list['jabatan']; ?>
+                 </p>
+               </div>
+             </div>
+           </div>
+         <?php endforeach; ?>
+    </div>
+  </div>
+
   <!-- Separator Start -->
   <!-- <section class="separator-area">
       <div class="container">

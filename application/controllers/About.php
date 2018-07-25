@@ -9,6 +9,7 @@ class About extends CI_Controller {
         $sekilasperusahaan = $this->mTentangKami->listSekilasPerusahaan();
         $visimisi = $this->mTentangKami->listVisiMisi();
         $pesandirektur = $this->mTentangKami->listPesanDirektur();
+				$organisasi = $this->mOrganisasi->listOrganisasi();
 
 		$data = array(  'title'	 => 'About',
                         'active' => 'about',
@@ -16,6 +17,7 @@ class About extends CI_Controller {
                         'sekilasperusahaan' => $sekilasperusahaan,
                         'visimisi' => $visimisi,
                         'pesandirektur' => $pesandirektur,
+												'organisasi' => $organisasi,
                         'isi'	 => 'front/about/about');
 		$this->load->view('front/layout/wrapper',$data);
 	}
