@@ -59,7 +59,7 @@
            <div class="col-md-4">
              <div class="card mb-4 box-shadow">
                <img class="card-img-top" src="assets/upload/image/<?php echo $organisasi_list['image']; ?>" alt="Card image cap">
-               <div class="card-body pt-2">
+               <div class="card-body" style="padding-top:15px">
                  <h5 class="card-title"><?php echo $organisasi_list['nama']; ?></h5>
                  <p class="card-text">
                    <?php echo $organisasi_list['jabatan']; ?>
