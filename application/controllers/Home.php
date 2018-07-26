@@ -7,13 +7,17 @@ class Home extends CI_Controller {
 	{
     $site  		= $this->mConfig->list_config();
 		$slider     = $this->mSlider->listSlider();
+		$sekilasperusahaan = $this->mTentangKami->listSekilasPerusahaan();
+		$organisasi = $this->mOrganisasi->listOrganisasi();
 
 		$data = array( 'title'	=> 'Home',
                        'site'   => $site,
                        'active' => 'home',
                        'sliders' => $slider,
-                        'isi'	=> 'front/home/home');
-		$this->load->view('home2');
+											 'sekilasperusahaan' => $sekilasperusahaan,
+											 'organisasi' => $organisasi
+										 );
+		$this->load->view('home2',$data);
 	}
 }
 ?>

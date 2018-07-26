@@ -148,8 +148,7 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
         </div>
       </div>
       <div class="col-md-4 animate-box">
-<p>BPA (Badan Pengelola Aset ) KM UII adalah sebuah organisasi yang telah berkembang yang awal mulanya disebut Tim Kerja Pengelola Aset SCC UII yang pertama kali dibentuk tahun 2014. BPA KM UII dibentuk didasari kepentingan jangka Panjang Lembaga yaitu dalam upaya mewujudkan kemandirian Lembaga KM UII, serta proses perbaikan sistem kelembagaan sehingga dapat meningkatkan tata kelola organisasi .Usaha BPA yang awal mulanya hanya mengandalkan penyewaan SCC , perkembangan merambah pada usaha-usaha lain diantaranya pengelolaan jas almamater, layanan sistem informasi ,dan usaha strategis lainnya.
-</p>
+        <?php echo $sekilasperusahaan['deskripsi'] ?>
       </div>
     </div>
   </div>
@@ -311,84 +310,21 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
   <div class="container">
       <div class="col-md-12 ">
         <div class="row">
+          <?php foreach($organisasi as $organisasi_list): ?>
           <div class="wrap-2">
             <div class="col-md-4 text-center animate-box">
-              <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
+              <div class="staff" class="staff-img" style="background-image: url('<?php echo base_url();?>assets/upload/image/<?php echo $organisasi_list['image'];?>');">
                 <a href="#" class="desc">
-                  <h3>DANUR LINTANG</h3>
-                  <span>SATFF BPA</span>
-                  <div class="parag">
-                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 text-center animate-box">
-              <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
-                <a href="#" class="desc">
-                  <h3>DANUR LINTANG</h3>
-                  <span>STAFF BPA</span>
-                  <div class="parag">
-                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 text-center animate-box">
-              <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
-                <a href="#" class="desc">
-                  <h3>DANUR LINTANG</h3>
-                  <span>STAFF BPA</span>
-                  <div class="parag">
-                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
-                  </div>
+                  <h3><?php echo $organisasi_list['nama']; ?></h3>
+                  <span><?php echo $organisasi_list['jabatan']; ?></span>
                 </a>
               </div>
             </div>
           </div>
+        <?php endforeach; ?>
+
         </div>
       </div>
-      <div class="col-md-12 ">
-        <div class="row">
-          <div class="wrap-2">
-            <div class="col-md-4 text-center animate-box">
-              <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
-                <a href="#" class="desc">
-                  <h3>DANUR LINTANG</h3>
-                  <span>STAFF BPA</span>
-                  <div class="parag">
-                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 text-center animate-box">
-              <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
-                <a href="#" class="desc">
-                  <h3>DANUR LINTANG</h3>
-                  <span>STAFF BPA</span>
-                  <div class="parag">
-                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 text-center animate-box">
-              <div class="staff" class="staff-img" style="background-image: url(<?php echo base_url(); ?>assets2/images/person1.jpg);">
-                <a href="#" class="desc">
-                  <h3>DANUR LINTANG</h3>
-                  <span>STAFF BPA</span>
-                  <div class="parag">
-                    <p>Bertugas untuk mengkoordinasi media publikasi BPA</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
   </div>
 </div>
 <div id="colorlib-testimony" class="colorlib-light-grey">
@@ -402,45 +338,21 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
         <div class="row animate-box">
           <span class="icon"><i class="icon-quotes-left"></i></span>
           <div class="owl-carousel1">
+            <?php foreach($organisasi as $organisasi_list): ?>
             <div class="item">
               <div class="testimony-slide active">
                 <div class="testimony-wrap">
                   <figure>
-                    <img src="<?php echo base_url(); ?>assets2/images/person1.jpg" alt="user">
+                    <img src="assets/upload/image/<?php echo $organisasi_list['image']; ?>" alt="user">
                   </figure>
                   <blockquote>
-                    <span>DANUR LINTANG</span>
-                    <p>BPA adalah badan yang menjunjung tinggi sistem profesionalisme </p>
+                    <span><?php echo $organisasi_list['nama']; ?></span>
+                    <p><?php echo $organisasi_list['pesan']; ?></p>
                   </blockquote>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="testimony-slide active">
-                <div class="testimony-wrap">
-                  <figure>
-                    <img src="<?php echo base_url(); ?>assets2/images/person1.jpg" alt="user">
-                  </figure>
-                  <blockquote>
-                    <span>DANUR LINTANG</span>
-                    <p>BPA adalah badan tempatnya bersih dan nyaman</p>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimony-slide active">
-                <div class="testimony-wrap">
-                  <figure>
-                    <img src="<?php echo base_url(); ?>assets2/images/person1.jpg" alt="user">
-                  </figure>
-                  <blockquote>
-                    <span>DANUR LINTANG</span>
-                    <p>Dengan harga yang murah dengan kualitas yang baik</p>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
+          <?php endforeach; ?>
           </div>
         </div>
       </div>

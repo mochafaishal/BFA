@@ -95,6 +95,12 @@ echo validation_errors('<div class="alert alert-success">','</div>');
         <label>Jabatan</label>
         <textarea id="Jabatan" name="jabatan" placeholder="Jabatan" class="form-control"><?php echo $organisasi['jabatan'] ?></textarea>
     </div>
+
+		<div class="form-group">
+				<label>Pesan</label>
+				<textarea name="pesan" rows="8" cols="80" class="form-control" value="<?php echo set_value('pesan') ?>" required placeholder="Pesan"><?php echo $organisasi['pesan'] ?></textarea>
+		</div>
+
 </div>
 <div class="col-md-12">
 <div class="form-group">

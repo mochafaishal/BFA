@@ -19,9 +19,10 @@ echo validation_errors('<div class="alert alert-success">','</div>');
 <thead>
     <tr>
         <th>#</th>
-        <th width="300px">Image</th>
-        <th>Judul</th>
+        <th>Image</th>
+        <th>Nama</th>
         <th>Jabatan</th>
+				<th>Pesan</th>
         <th width="150px">Action</th>
     </tr>
 </thead>
@@ -30,7 +31,7 @@ echo validation_errors('<div class="alert alert-success">','</div>');
     <tr class="odd gradeX">
         <td><?php echo $i; ?></td>
         <td>
-        <img src="<?php echo base_url('assets/upload/image/'.$list['image']);?>" width="300px">
+        <img src="<?php echo base_url('assets/upload/image/'.$list['image']);?>" width="150px">
         </td>
         <td>
         <?php echo substr(strip_tags($list['nama']),0,30) ?>
@@ -38,10 +39,14 @@ echo validation_errors('<div class="alert alert-success">','</div>');
         <td>
         <?php echo substr(strip_tags($list['jabatan']),0,30) ?>
         </td>
+				<td>
+				<?php echo substr(strip_tags($list['pesan']),0,30) ?>
+				</td>
         <td class="center">
         <a href="<?php echo base_url('admin/organisasi/edit/'.$list['id_organisasi']);?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
        <!-- View Biz -->
-       <!--  Modals-->
+
+			 <!--  Modals-->
         <button class="btn btn-success" data-toggle="modal" data-target="#View<?php echo $list['id_organisasi']; ?>"><i class="fa fa-eye"></i></button>
 
         <div class="modal fade" id="View<?php echo $list['id_organisasi']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -53,7 +58,8 @@ echo validation_errors('<div class="alert alert-success">','</div>');
               </div>
               <div class="modal-body">
               <div class="col-md-12">
-                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-hover">
+
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table table-striped table-bordered table-hover">
           <tr>
           <img src="<?php echo base_url('assets/upload/image/'.$list['image']);?>" width="100%">
             <td>Nama</td>
@@ -63,6 +69,10 @@ echo validation_errors('<div class="alert alert-success">','</div>');
             <td>Jabatan</td>
             <td><?php echo $list['jabatan']; ?></td>
           </tr>
+					<tr>
+						<td>Pesan</td>
+						<td><?php echo $list['pesan']; ?></td>
+					</tr>
           <tr>
             <td>&nbsp;</td>
             <td>
@@ -70,7 +80,8 @@ echo validation_errors('<div class="alert alert-success">','</div>');
             <a href="<?php echo base_url('admin/organisasi/delete/'.$list['id_organisasi']) ?>" class="btn btn-danger">Delete</a>
           </tr>
         </table>
-        </div>
+
+				</div>
         <div class="clearfix"></div>
               </div>
 

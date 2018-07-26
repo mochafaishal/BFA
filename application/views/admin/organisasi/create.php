@@ -99,6 +99,11 @@ echo validation_errors('<div class="alert alert-success">','</div>');
         <label>Jabatan</label>
         <input type="text" name="jabatan" class="form-control" value="<?php echo set_value('jabatan') ?>" required placeholder="Jabatan">
     </div>
+
+		<div class="form-group">
+				<label>Pesan</label>
+				<textarea name="pesan" rows="8" cols="80" class="form-control" value="<?php echo set_value('pesan') ?>" required placeholder="Pesan"></textarea>
+		</div>
 </div><br>
 <div class="col-md-12">
 <div class="form-group"><br>

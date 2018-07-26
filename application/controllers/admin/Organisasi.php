@@ -51,6 +51,7 @@
 				$data = array(	'slug_organisasi'	=> $slugOrganisasi,
 								'nama'			=> $i->post('nama'),
 								'jabatan' 		=> $i->post('jabatan'),
+                'pesan' 		=> $i->post('pesan'),
 								'image'			=> $upload_data['uploads']['file_name']
 				 			 );
 				$this->mOrganisasi->createOrganisasi($data);
@@ -110,6 +111,7 @@
 							'slug_organisasi'		=> $slugOrganisasi,
 							'nama'				=> $i->post('nama'),
 							'jabatan'			=> $i->post('jabatan'),
+              'pesan' 		=> $i->post('pesan'),
 							'image'				=> $upload_data['uploads']['file_name']
 							);
 			$this->mOrganisasi->editOrganisasi($data);
@@ -122,6 +124,7 @@
 							'slug_organisasi'		=> $slugOrganisasi,
 							'nama'				=> $i->post('nama'),
 							'jabatan'			=> $i->post('jabatan'),
+              'pesan' 		=> $i->post('pesan'),
 							);
 			$this->mOrganisasi->editOrganisasi($data);
 			$this->session->set_flashdata('sukses','Success');
