@@ -2,9 +2,9 @@
 $GaleriFoto = $this->mGaleri->listGaleriFoto();
 // Session
 if($this->session->flashdata('sukses')) {
-	echo '<div class="alert alert-success">';
-	echo $this->session->flashdata('sukses');
-	echo '</div>';
+  echo '<div class="alert alert-success">';
+  echo $this->session->flashdata('sukses');
+  echo '</div>';
 }
 // Error
 echo validation_errors('<div class="alert alert-success">','</div>');
@@ -22,11 +22,12 @@ echo validation_errors('<div class="alert alert-success">','</div>');
         <th>#</th>
         <th width="150px">Image</th>
         <th>Caption</th>
+        <th>Category</th>
         <th width="150px">Action</th>
     </tr>
 </thead>
 <tbody>
-	<?php $i=1; foreach($GaleriFoto as $list) { ?>
+  <?php $i=1; foreach($GaleriFoto as $list) { ?>
     <tr class="odd gradeX">
         <td><?php echo $i; ?></td>
         <td>
@@ -34,6 +35,9 @@ echo validation_errors('<div class="alert alert-success">','</div>');
         </td>
         <td>
         <?php echo substr(strip_tags($list['judul']),0,50) ?>
+        </td>
+        <td>
+        <?php echo $list['kategori'] ?>
         </td>
         <td class="center">
         <a href="<?php echo base_url('admin/gallery/galeri_foto/edit/'.$list['id_galeri_foto']);?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a>

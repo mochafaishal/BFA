@@ -1,7 +1,7 @@
 <script src="<?php echo base_url() ?>assets/tinymce/js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript">
 tinymce.init({
-	file_browser_callback: function(field, url, type, win) {
+    file_browser_callback: function(field, url, type, win) {
         tinyMCE.activeEditor.windowManager.open({
             file: '<?php echo base_url() ?>assets/kcfinder/browse.php?opener=tinymce4&field=' + field + '&type=' + type,
             title: 'KCFinder',
@@ -16,7 +16,7 @@ tinymce.init({
         return false;
     },
     selector: "#isi",
-	height: 250,
+    height: 250,
     plugins: [
         "advlist autolink lists link image charmap print preview anchor",
         "searchreplace visualblocks code fullscreen",
@@ -60,20 +60,22 @@ $(function() {
 <?php
 // Session
 if($this->session->flashdata('sukses')) {
-	echo '<div class="alert alert-success">';
-	echo $this->session->flashdata('sukses');
-	echo '</div>';
+    echo '<div class="alert alert-success">';
+    echo $this->session->flashdata('sukses');
+    echo '</div>';
 }
 
 // File upload error
 if(isset($error)) {
-	echo '<div class="alert alert-success">';
-	echo $error;
-	echo '</div>';
+    echo '<div class="alert alert-success">';
+    echo $error;
+    echo '</div>';
 }
 
 // Error
 echo validation_errors('<div class="alert alert-success">','</div>');
+
+$Kategori = $this->mGaleri->listGaleriKategori();
 ?>
 
 <form action="<?php echo base_url('admin/gallery/Galeri_foto/edit/'.$GaleriFoto['id_galeri_foto']) ?>" method="post" enctype="multipart/form-data">
@@ -85,14 +87,25 @@ echo validation_errors('<div class="alert alert-success">','</div>');
     </div>
 </div>
 <div class="col-md-6">
-	<div class="form-group">
+    <div class="form-group">
         <label>Caption</label>
         <textarea name="judul" placeholder="Judul" class="form-control"><?php echo $GaleriFoto['judul'] ?></textarea>
+    </div>
+
+    <div class="form-group">
+            <label>Kategori</label>
+        <select name="kategori" class="form-control">
+        <option value="<?php echo $GaleriFoto['kategori'] ?>"><?php echo $GaleriFoto['kategori'] ?></option>
+        <option value="">-</option>
+        <?php foreach($Kategori as $list) { ?>
+          <option value="<?php echo $list['nama_kategori'] ?>"><?php echo $list['nama_kategori'] ?></option>
+        <?php } ?>
+        </select>
     </div>
 </div>
 <div class="col-md-12">
 <div class="form-group">
-	<input type="submit" name="submit" value="Update" class="btn btn-primary">
+    <input type="submit" name="submit" value="Update" class="btn btn-primary">
     <input type="reset" name="reset" value="Reset" class="btn btn-default">
     <a href="<?php echo base_url('admin/gallery/galeri_foto/') ?>" class="btn btn-primary">Cancel</a>
     </div>
