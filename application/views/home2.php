@@ -1,6 +1,5 @@
 <?php
 $organisasi = $this->mOrganisasi->listOrganisasi();
-<?php
     $site = $this->mConfig->list_config();
 ?>
 
@@ -43,7 +42,7 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
     <meta content='general' name='rating'/>
     <meta content='all' name='robots'/>
     <meta content='index, follow' name='robots'/>
-    
+
     <title>Badan Pengelola Aset KM UII</title>
 
 
@@ -386,6 +385,10 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
 <footer id="colorlib-footer" role="contentinfo">
   <div class="container">
     <div class="row row-pb-md">
+      <div class="col-md-1">
+
+      </div>
+
       <div class="col-md-3 colorlib-widget">
         <h4>About Company</h4>
         <p>BPA (Badan Pengelola Aset ) KM UII adalah sebuah organisasi yang telah berkembang yang awal mulanya disebut Tim Kerja Pengelola Aset SCC UII yang pertama kali dibentuk tahun 2014. </p>
@@ -397,10 +400,7 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
           </ul>
         </p>
       </div>
-      <div class="col-md-3 col-md-push-1">
-        <h4>Recent Blog</h4>
 
-      </div>
       <div class="col-md-3 col-md-push-1 colorlib-widget">
         <h4>Information</h4>
         <p>
