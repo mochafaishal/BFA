@@ -32,9 +32,11 @@
                                 <li class="dropdown <?php if ($active == 'home') echo 'active'; ?>">
                                     <a href="<?php echo base_url('home'); ?>">Home </a>
                                 </li>
-                                <li <?php if ($active == 'about') echo 'class="active"'; ?>><a href="<?php echo base_url('about'); ?>">TENTANG KAMI</a></li>
-                                <li class="dropdown <?php if ($active == 'jadwal') echo 'active'; ?>">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JADWAL<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <li <?php if ($active == 'about') echo 'class="active"'; ?>>
+                                    <a href="<?php echo base_url('about'); ?>">TENTANG KAMI</a></li>
+                                <li <?php if ($active == 'jadwal') echo 'class="active"'; ?>>
+                                    <a href="<?php echo base_url('jadwal'); ?>">JADWAL</a>
+                                </li>
                                 <li class="dropdown <?php if ($active == 'galeri') echo 'active'; ?>">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GALERI<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <ul class="dropdown-menu">

@@ -51,7 +51,7 @@ echo validation_errors('<div class="alert alert-success">','</div>');
 
 <form role="form" action="<?php echo base_url('admin/login') ?>" method="post">
    <br />
- <div class="form-group input-group">
+    <div class="form-group input-group">
         <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
         <input type="text" name="username" class="form-control" placeholder="Username " />
     </div>
@@ -59,7 +59,7 @@ echo validation_errors('<div class="alert alert-success">','</div>');
         <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
         <input type="password" name="password" class="form-control"  placeholder="Password" />
     	</div>
-<div class="form-group">
+    <div class="form-group">
         <label class="checkbox-inline">
             <input type="checkbox" /> Remember me
         </label>
@@ -67,7 +67,6 @@ echo validation_errors('<div class="alert alert-success">','</div>');
     </div>
 
  	<input type="submit" name="submit" value="Login Now" class="btn btn-primary">
-    <input type="reset" name="reset" value="Reset" class="btn btn-default">
 </form>
 </div>
 </div>

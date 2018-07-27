@@ -52,7 +52,8 @@
 				$slugGaleriFoto = url_title($this->input->post('judul'), 'dash', TRUE);
 				$data = array(	'slug_galeri_foto'	=> $slugGaleriFoto,
 								'judul'				=> $i->post('judul'),
-								'image'				=> $upload_data['uploads']['file_name']
+								'image'				=> $upload_data['uploads']['file_name'],
+								'kategori'			=> $i->post('kategori')
 				 			 );
 				$this->mGaleri->createGaleriFoto($data);
 				$this->session->set_flashdata('sukses','Success');
@@ -113,7 +114,8 @@
 			$data = array(	'id_galeri_foto'		=> $GaleriFoto['id_galeri_foto'],
 							'slug_galeri_foto'		=> $slugGaleriFoto,
 							'judul'					=> $i->post('judul'),
-							'image'					=> $upload_data['uploads']['file_name']
+							'image'					=> $upload_data['uploads']['file_name'],
+							'kategori'			    => $i->post('kategori')
 							);
 			$this->mGaleri->editGaleriFoto($data);
 			$this->session->set_flashdata('sukses','Success');
@@ -124,6 +126,7 @@
 			$data = array(	'id_galeri_foto'		=> $GaleriFoto['id_galeri_foto'],
 							'slug_galeri_foto'		=> $slugGaleriFoto,
 							'judul'					=> $i->post('judul'),
+							'kategori'				=> $i->post('kategori')
 							);
 			$this->mGaleri->editGaleriFoto($data);
 			$this->session->set_flashdata('sukses','Success');

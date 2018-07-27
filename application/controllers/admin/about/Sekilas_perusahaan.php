@@ -27,7 +27,7 @@
 			$this->load->library('upload', $config);
 			if(! $this->upload->do_upload('image')) {
 
-			$data = array(	'title'				=> 'Edit Sekilas Perusahaan - '.$site['namaweb'],
+			$data = array(	'title'				=> 'Edit Sekilas Profil - '.$site['namaweb'],
 							'sekilasperusahaan'	=> $sekilasperusahaan,
 							'error'				=> $this->upload->display_errors(),
 							'isi'				=> 'admin/about/sekilas_perusahaan');
@@ -74,7 +74,7 @@
 			redirect(base_url('admin/about/sekilas_perusahaan'));
 		}}
 
-		$data = array(	'title'				=> 'Edit Sekilas Perusahaan - '.$site['namaweb'],
+		$data = array(	'title'				=> 'Edit Sekilas Profil - '.$site['namaweb'],
 						'sekilasperusahaan'	=> $sekilasperusahaan,
 						'isi'				=> 'admin/about/sekilas_perusahaan');
 		$this->load->view('admin/layout/wrapper', $data);

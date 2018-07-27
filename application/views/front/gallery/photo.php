@@ -1,3 +1,7 @@
+<?php
+    $Kategori = $this->mGaleri->listGaleriKategori();
+?>
+
 <!-- Inner Page title Start -->
 <section class="innerpage-titlebar">
     <div class="container">
@@ -23,10 +27,16 @@
     <div class="container">
         <div class="row">
             <div class="portfolio-col">
-
+                <!-- Filter Nav -->
+                    <ul class="portfolio-nav">
+                        <li data-filter="all"> All </li>
+                        <?php $i=1; foreach($Kategori as $list) { ?>
+                        <li data-filter="<?php echo $i ?>"> <?php echo $list['nama_kategori'] ?> </li>
+                        <?php $i++; } ?>
+                    </ul>
                 <div class="filtr-container">
                     <?php foreach ($foto as $galeri){ ?>
-                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2, 1" data-sort="value">
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="<?php echo $galeri['kategori'] ?>" data-sort="value">
                         <div class="hover-box">
                             <img src="<?php echo base_url('assets/upload/image/'.$galeri['image']);?>" alt="">
                             <div class="hover-box-content">

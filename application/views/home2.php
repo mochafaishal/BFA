@@ -1,27 +1,50 @@
 <?php
 $organisasi = $this->mOrganisasi->listOrganisasi();
+<?php
+    $site = $this->mConfig->list_config();
 ?>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Badan Pengelola Aset UII</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content=""/>
-<meta name="keywords" content="" />
-<meta name="author" content="" />
-
-<!-- Facebook and Twitter integration -->
-<meta property="og:title" content=""/>
-<meta property="og:image" content=""/>
-<meta property="og:url" content=""/>
-<meta property="og:site_name" content=""/>
-<meta property="og:description" content=""/>
-<meta name="twitter:title" content="" />
-<meta name="twitter:image" content="" />
-<meta name="twitter:url" content="" />
-<meta name="twitter:card" content="" />
-
+    <meta charset="utf-8">
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <meta content='http://cv-sudirman.com/' property='og:url'/>
+    <meta content='<?php echo $site['metatext'] ?>' name='description'/>
+    <meta content='<?php echo $site['keyword'] ?>' name='keywords'/>
+    <meta content='CV-Sudirman' name='subject'/>
+    <meta content='BPA KM UII | BPA (Badan Pengelola Aset ) KM UII adalah sebuah organisasi yang telah berkembang yang awal mulanya disebut Tim Kerja Pengelola Aset SCC UII yang pertama kali dibentuk tahun 2014.' name='Abstract'/>
+    <meta content='' name='search engines'/>
+    <meta content='' name='copyright'/>
+    <meta content='Codenesia' name='author'/>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+    <meta content='UTF-8' name='Charset'/>
+    <meta content='Global' name='Distribution'/>
+    <meta content="id_ID" property="og:locale"/>
+    <meta content="website" property="og:type"/>
+    <meta content='General' name='Rating'/>
+    <meta content='INDEX FOLLOW' name='Robots'/>
+    <meta content='ID' name='language'/>
+    <meta content='ID' name='geo.country'/>
+    <meta content='Indonesia' name='geo.placename'/>
+    <meta content='global' name='distribution'/>
+    <meta content='blogger' name='generator'/>
+    <meta content='general' name='rating'/>
+    <meta content='global' name='target'/>
+    <meta content='index,follow,snipet' name='googlebot'/>
+    <meta content='follow, all' name='Googlebot-Image'/>
+    <meta content='follow, all' name='Scooter'/>
+    <meta content='follow, all' name='msnbot'/>
+    <meta content='follow, all' name='alexabot'/>
+    <meta content='follow, all' name='Slurp'/>
+    <meta content='follow, all' name='ZyBorg'/>
+    <meta content='follow, all' name='Scooter'/>
+    <meta content='ALL' name='SPIDERS'/>
+    <meta content='ALL' name='WEBCRAWLERS'/>
+    <meta content='general' name='rating'/>
+    <meta content='all' name='robots'/>
+    <meta content='index, follow' name='robots'/>
+    
+    <title>Badan Pengelola Aset KM UII</title>
 
 
 <link href="<?php echo base_url(); ?>assets2/https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700" rel="stylesheet">
@@ -69,9 +92,9 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
           <ul>
             <li class="active"><a href="<?php echo base_url('home2'); ?>">Home</a></li>
             <li><a href="<?php echo base_url('about'); ?>">Tentang Kami</a></li>
-            <li><a href="<?php echo base_url('product_1'); ?>">Jadwal</a></li>
+            <li><a href="<?php echo base_url('jadwal'); ?>">Jadwal</a></li>
             <li class="has-dropdown">
-              <a href="work.html">Galeri</a>
+              <a>Galeri</a>
               <ul class="dropdown">
                 <li><a href="<?php echo base_url('photo'); ?>">Foto</a></li>
                 <li><a href="<?php echo base_url('video'); ?>">Video</a></li>
@@ -405,9 +428,7 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
     <div class="row">
       <div class="col-md-12 text-center">
         <p>
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          <small class="block">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved.  <br>This template is made with <i class="icon-heart3" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></small>
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          <small class="block">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Badan Pengelola Aset KM UII.  <br>Development <i class="icon-heart3" aria-hidden="true"></i> by <a href="https://codenesia.id" target="_blank">Codenesia</a></small>
         </p>
       </div>
     </div>

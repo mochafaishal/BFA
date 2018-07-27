@@ -140,4 +140,5 @@ $autoload['model'] = array( 'Config_model' 		=> 'mConfig',
 							'Organisasi_model' 	=> 'mOrganisasi',
 							'Kontak_model' 		=> 'mKontak',
 							'Statistik_model' 	=> 'mStats',
+							'mynotes_model' 	=> 'mynotes',
 						);

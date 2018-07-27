@@ -23,7 +23,10 @@ $site = $this->mConfig->list_config();
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 <!-- TABLE STYLES-->
 <link href="<?php echo base_url() ?>assets/admin/assets/js/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
-<script src="<?php echo base_url() ?>assets/admin/assets/js/jquery-1.10.2.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/admin/assets/kalender/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/admin/assets/kalender/css/colorbox.css"/>
+<script type="text/javascript" src="<?php echo base_url();?>assets/admin/assets/kalender/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/admin/assets/kalender/js/jquery.colorbox-min.js"></script>
 </head>
 
 <body>

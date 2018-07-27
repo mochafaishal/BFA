@@ -65,29 +65,29 @@
 
         public function total_rows($table){
             return $this->db->count_all_results($table);
-	    }
+        }
 
         public function read($table,$order,$limit,$offset){
-		// $query = $this->db->query("select * from $table order by ID DESC");
+        // $query = $this->db->query("select * from $table order by ID DESC");
 
-		$this->db->from($table);
-		$this->db->limit($limit,$offset);
-		$this->db->order_by($order, 'DESC');
+        $this->db->from($table);
+        $this->db->limit($limit,$offset);
+        $this->db->order_by($order, 'DESC');
 
-		$query = $this->db->get();
-		if($query->num_rows() > 0){
-			foreach($query->result_array() as $row){
-				$data[] = $row;
-			}
+        $query = $this->db->get();
+        if($query->num_rows() > 0){
+            foreach($query->result_array() as $row){
+                $data[] = $row;
+            }
 
-			$query->free_result();
-		}
-		else{
-			$data = NULL;
-		}
+            $query->free_result();
+        }
+        else{
+            $data = NULL;
+        }
 
-		return $data;
-	   }
+        return $data;
+       }
 
         ///////////////////////////////////////////////
 
@@ -141,6 +141,61 @@
             $this->db->select('*');
             $this->db->from('galeri_video');
             $this->db->order_by('id_galeri_video','DESC');
+            $query = $this->db->get();
+            return $query->row_array();
+        }
+
+
+        // Listing GaleriKategori
+        public function listGaleriKategori() {
+            $this->db->select('*');
+            $this->db->from('galeri_kategori');
+            $this->db->order_by('id_galeri_kategori','ASC');
+            $query = $this->db->get();
+            return $query->result_array();
+        }
+
+        // Create GaleriKategori
+        public function createGaleriKategori($data) {
+            $this->db->insert('galeri_kategori',$data);
+        }
+
+        // Detail GaleriKategori
+        public function detailGaleriKategori($id_galeri_kategori) {
+            $this->db->select('*');
+            $this->db->from('galeri_kategori');
+            $this->db->where('id_galeri_kategori',$id_galeri_kategori);
+            $this->db->order_by('id_galeri_kategori','DESC');
+            $query = $this->db->get();
+            return $query->row_array();
+        }
+
+        // Read GaleriKategori
+        public function readGaleriKategori($slugGaleriKategori) {
+            $this->db->select('*');
+            $this->db->from('galeri_kategori');
+            $this->db->where('slug_galeri_kategori',$slugGaleriKategori);
+            $query = $this->db->get();
+            return $query->row_array();
+        }
+
+        // Edit GaleriKategori
+        public function editGaleriKategori($data) {
+            $this->db->where('id_galeri_kategori',$data['id_galeri_kategori']);
+            $this->db->update('galeri_kategori',$data);
+        }
+
+        // Delete GaleriKategori
+        public function deleteGaleriKategori($data) {
+            $this->db->where('id_galeri_kategori',$data['id_galeri_kategori']);
+            $this->db->delete('galeri_kategori',$data);
+        }
+
+        // End GaleriKategori
+        public function endGaleriKategori() {
+            $this->db->select('*');
+            $this->db->from('galeri_kategori');
+            $this->db->order_by('id_galeri_kategori','DESC');
             $query = $this->db->get();
             return $query->row_array();
         }

@@ -29,7 +29,6 @@ $('#dataTables-example').dataTable();
 });
 </script>
 <!-- CUSTOM SCRIPTS -->
-<script src="<?php echo base_url() ?>assets/admin/assets/js/custom.js"></script>
 
 
 </body>
