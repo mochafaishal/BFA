@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 24, 2018 at 09:14 AM
--- Server version: 10.1.30-MariaDB
--- PHP Version: 7.2.2
+-- Generation Time: 27 Jul 2018 pada 11.00
+-- Versi Server: 10.1.21-MariaDB
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `umliumco_cvsudirman`
+-- Database: `bfa`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `config`
+-- Struktur dari tabel `config`
 --
 
 CREATE TABLE `config` (
@@ -40,39 +38,67 @@ CREATE TABLE `config` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `config`
+-- Dumping data untuk tabel `config`
 --
 
 INSERT INTO `config` (`id_config`, `namaweb`, `email`, `telepon`, `logo`, `icon`, `keyword`, `metatext`) VALUES
-(1, 'Badan Pengurus Aset UII', '                                   bpa@uii.ac.id', '081229867117', '32.jpg', '112.jpg', 'cv-sudirman, industri, pengecoran, logam, manufaktur, induction, furnance, system, batur, ceper, klaten, jawa tengah, indonesia', 'CV-Sudirman.com - kami adalah sebuah perusahaan yang bergerak dalam bidang jasa pengecoran Logam yang terbaik di indonesia, Berdiri sejak 20 tahun lebih CV-Sudirman.com berhasil membangun komunikasi dan melebarkan sayapnya didunia pengecoran logam nusantara dan mempunyai mitra yang sangat banyak dan loyal terhadap industri pengecoran logam, Sudah banyak yang memanfaatkan jasa pengecoran setengah jadi hingga finish di CV-Sudirman. Kami biasa melayani perusahaan perusahaan besar seluruh indonesia dari mulai pertambangan, pertanian, industri otomotif, industri rumahan, dan mencakup instansi pemerintahan seperti dinas pekerja umum, dinas perairan, dinas pertanian dan masing banyak lagi.\r\n\r\n');
+(1, 'Badan Pengelola Aset KM UII', 'cvsudirmanlogam@gmail.com', '081229867117, 081221687900', 'logo-h.png', 'fav.png', 'cv-sudirman, industri, pengecoran, logam, manufaktur, induction, furnance, system, batur, ceper, klaten, jawa tengah, indonesia,foundry,casting,', 'CV-Sudirman.com - kami adalah sebuah perusahaan yang bergerak dalam bidang jasa pengecoran Logam yang terbaik di indonesia, Berdiri sejak 20 tahun lebih CV-Sudirman.com berhasil membangun komunikasi dan melebarkan sayapnya didunia pengecoran logam nusantara dan mempunyai mitra yang sangat banyak dan loyal terhadap industri pengecoran logam, Sudah banyak yang memanfaatkan jasa pengecoran setengah jadi hingga finish di CV-Sudirman. Kami biasa melayani perusahaan perusahaan besar seluruh indonesia dari mulai pertambangan, pertanian, industri otomotif, industri rumahan, dan mencakup instansi pemerintahan seperti dinas pekerja umum, dinas perairan, dinas pertanian dan masing banyak lagi.\r\n\r\n');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `galeri_foto`
+-- Struktur dari tabel `galeri_foto`
 --
 
 CREATE TABLE `galeri_foto` (
   `id_galeri_foto` int(11) NOT NULL,
   `slug_galeri_foto` varchar(255) NOT NULL,
   `judul` varchar(255) NOT NULL,
-  `image` varchar(255) NOT NULL
+  `image` varchar(255) NOT NULL,
+  `kategori` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `galeri_foto`
+-- Dumping data untuk tabel `galeri_foto`
 --
 
-INSERT INTO `galeri_foto` (`id_galeri_foto`, `slug_galeri_foto`, `judul`, `image`) VALUES
-(16, 'scc', 'SCC', '11.jpg'),
-(17, 'front-scc', 'Front SCC', '31.jpg'),
-(18, 'inside-of-scc', 'Inside of SCC', '39.jpg'),
-(19, 'scc-ppl', 'SCC ppl', '34.jpg');
+INSERT INTO `galeri_foto` (`id_galeri_foto`, `slug_galeri_foto`, `judul`, `image`, `kategori`) VALUES
+(27, 'hahaha', 'hahaha', 'images.png', '1'),
+(28, '28-sudirman', 'sudirman', 'appstore.png', '2'),
+(29, 'aa', 'aa', 'GitHub-Logo1.png', '1'),
+(30, 'ssss', 'ssss', '679449-idevice_iphone_iphone4_iphone4s_phone_handphone_smartphone_apple_touchscreen_gadget_mobile_handheld-512.png', '3'),
+(31, 'ssssss', 'ssssss', 'images.jpg', '2'),
+(32, 'fffff', 'fffff', 'codenesia-logos1.png', '1'),
+(33, 'ddd', 'ddd', 'codenesia-logos.png', '2'),
+(34, 'sdccscs', 'sdccscs', 'codenesia-logo.png', '2'),
+(35, 'efwwfd', 'efwwfd', 'codenesia-logo1.png', '3'),
+(36, 'ewdwwwdd', 'ewdwwwdd', 'codenesia.png', '1');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `galeri_video`
+-- Struktur dari tabel `galeri_kategori`
+--
+
+CREATE TABLE `galeri_kategori` (
+  `id_galeri_kategori` int(11) NOT NULL,
+  `nama_kategori` varchar(255) NOT NULL,
+  `slug_galeri_kategori` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `galeri_kategori`
+--
+
+INSERT INTO `galeri_kategori` (`id_galeri_kategori`, `nama_kategori`, `slug_galeri_kategori`) VALUES
+(1, 'testedeee', '2-testedeee'),
+(2, 'hahah', 'hahah'),
+(3, 'ee', 'ee');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `galeri_video`
 --
 
 CREATE TABLE `galeri_video` (
@@ -83,18 +109,17 @@ CREATE TABLE `galeri_video` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `galeri_video`
+-- Dumping data untuk tabel `galeri_video`
 --
 
 INSERT INTO `galeri_video` (`id_galeri_video`, `slug_galeri_video`, `judul`, `link_video`) VALUES
-(3, '4-proses-cairan', 'Proses Cairan', '<iframe width=\"350\" height=\"200\" src=\"https://www.youtube.com/embed/1uvg3GlWXuI\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>'),
-(4, 'jazmine-music', 'Jazmine Music', '<iframe width=\"360\" height=\"200\" src=\"https://www.youtube.com/embed/Ewow1zWE8_c\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>'),
-(5, '5-bpa', 'BPA', '<iframe width=\"360\" height=\"360\" src=\"https://www.youtube.com/embed/F0MC3dMujow\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>');
+(3, '3-proses-cairan', 'Proses Cairan', '<iframe width=\"360\" height=\"200\" src=\"https://www.youtube.com/embed/4quQo0V-suU\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>'),
+(4, '4-hahahahahah', 'hahahahahah', '<iframe width=\"360\" height=\"200\" src=\"https://www.youtube.com/embed/d9seOExdeBM?ecver=1\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `industri_besar`
+-- Struktur dari tabel `industri_besar`
 --
 
 CREATE TABLE `industri_besar` (
@@ -106,7 +131,7 @@ CREATE TABLE `industri_besar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `industri_besar`
+-- Dumping data untuk tabel `industri_besar`
 --
 
 INSERT INTO `industri_besar` (`id_industri_besar`, `slug_industri_besar`, `judul`, `image`, `deskripsi`) VALUES
@@ -162,12 +187,26 @@ INSERT INTO `industri_besar` (`id_industri_besar`, `slug_industri_besar`, `judul
 (67, 'pulley-kawat-bendrat', 'Pulley Kawat Bendrat', '3dd8c93f-0cb5-4c39-bfbb-394c6d3fccda.JPG', '<p>Type, Diameter&nbsp;dan&nbsp;Ukuran Bisa Dipesan By Request.</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper,</em></strong><strong><em>Klaten</em></strong></p>\r\n<p><strong><em>Jawa Tengah&nbsp;</em></strong></p>\r\n<p><strong><em>Indonesia</em></strong></p>\r\n<p>&nbsp;</p>'),
 (68, 'sparepart-mesin-tenun', 'Sparepart Mesin Tenun', '0c359167-2971-4a57-8391-5582e3cc8f3d.JPG', '<p>Type, Ukuran Bisa Dipesan By Request.</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper,</em></strong><strong><em>Klaten</em></strong></p>\r\n<p><strong><em>Jawa Tengah&nbsp;</em></strong></p>\r\n<p><strong><em>Indonesia</em></strong></p>\r\n<p>&nbsp;</p>'),
 (69, 'pulley-belt-generator-yanmar-11rd-85', 'Pulley Belt Generator Yanmar 11RD-85', '0e61156a-53ea-4a3f-b286-80d98fadc18a.JPG', '<p>Type, Diameter&nbsp;dan&nbsp;Ukuran Bisa Dipesan By Request.</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper,</em></strong><strong><em>Klaten</em></strong></p>\r\n<p><strong><em>Jawa Tengah&nbsp;</em></strong></p>\r\n<p><strong><em>Indonesia</em></strong></p>\r\n<p>&nbsp;</p>'),
-(71, 'bahan-couple', 'Bahan Couple', 'f684e60c-8ad4-4470-a252-72045fe89392.JPG', '<p>Model, Diameter&nbsp;dan&nbsp;Ukuran Bisa Dipesan By Request.</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper,</em></strong><strong><em>Klaten</em></strong></p>\r\n<p><strong><em>Jawa Tengah&nbsp;</em></strong></p>\r\n<p><strong><em>Indonesia</em></strong></p>\r\n<p>&nbsp;</p>');
+(71, 'bahan-couple', 'Bahan Couple', 'f684e60c-8ad4-4470-a252-72045fe89392.JPG', '<p>Model, Diameter&nbsp;dan&nbsp;Ukuran Bisa Dipesan By Request.</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper,</em></strong><strong><em>Klaten</em></strong></p>\r\n<p><strong><em>Jawa Tengah&nbsp;</em></strong></p>\r\n<p><strong><em>Indonesia</em></strong></p>\r\n<p>&nbsp;</p>'),
+(72, 'body-pump', 'Body Pump', 'PHOTO-2018-07-11-09-50-381.jpg', '<div class=\"col-md-12\">\r\n<p>&nbsp;</p>\r\n<p>Type Pompa dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>\r\n<table class=\"table table-striped table-bordered table-hover\" border=\"0\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\r\n<tbody>\r\n<tr>\r\n<td>&nbsp;</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n<p>&nbsp;</p>'),
+(73, 'pondasi-depan-pompa', 'Pondasi Depan Pompa', 'PHOTO-2018-07-11-09-09-361.jpg', '<p>Model&nbsp;dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(74, 'body-pump-air-with-impeller', 'Body Pump air with impeller', 'PHOTO-2018-07-11-10-01-501.jpg', '<p>Model pompa air dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(75, 'mixing-aspal', 'Mixing Aspal ', 'PHOTO-2018-07-12-12-18-28.jpg', '<p>Sparepart Aspal dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(76, 'body-hydrant', 'Body Hydrant', 'PHOTO-2018-07-12-12-27-40.jpg', '<p>&nbsp;Diameter dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(77, 'sparepart-sisir', 'Sparepart Sisir', 'PHOTO-2018-07-12-12-19-31.jpg', '<p>&nbsp;Type Dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(78, 'pulley', 'Pulley ', 'PHOTO-2018-07-12-12-21-51.jpg', '<p>Type pulley dan&nbsp;&nbsp;diameter dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(79, 'cover-pompa-air', 'Cover Pompa air', 'PHOTO-2018-07-11-09-22-041.jpg', '<p>Bentuk dan ukuran&nbsp;dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(80, 'cover-pompa-air', 'Cover Pompa air', 'PHOTO-2018-07-11-09-15-381.jpg', '<p>Bentuk dan ukuran&nbsp;dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(81, 'cover-belakang-electro-motor', 'Cover Belakang Electro motor', 'PHOTO-2018-07-11-10-06-311.jpg', '<p>Bentuk dan ukuran&nbsp;dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(82, 'couple-mesin', 'Couple Mesin', 'PHOTO-2018-07-11-09-40-411.jpg', '<p>Bentuk dan ukuran diameter dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(83, 'grill-jalan', 'Grill Jalan', 'PHOTO-2018-07-12-12-24-36.jpg', '<p>Bentuk dan ukuran&nbsp;dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(84, 'pulley', 'pulley ', 'PHOTO-2018-07-16-09-10-53.jpg', '<p>Diameter&nbsp;ukuran&nbsp;dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(85, 'komponen-drainase', 'Komponen Drainase', 'PHOTO-2018-07-14-09-58-02.jpg', '<p>Bentuk dan ukuran&nbsp;dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `industri_kecil`
+-- Struktur dari tabel `industri_kecil`
 --
 
 CREATE TABLE `industri_kecil` (
@@ -179,7 +218,7 @@ CREATE TABLE `industri_kecil` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 --
--- Dumping data for table `industri_kecil`
+-- Dumping data untuk tabel `industri_kecil`
 --
 
 INSERT INTO `industri_kecil` (`id_industri_kecil`, `slug_industri_kecil`, `judul`, `image`, `deskripsi`) VALUES
@@ -194,38 +233,15 @@ INSERT INTO `industri_kecil` (`id_industri_kecil`, `slug_industri_kecil`, `judul
 (23, 'barbel-balok-pemberat-5kg10kg', 'Barbel Balok (pemberat) 5kg/10kg', '0035505e-056e-4690-9101-1b2b22be9852.JPG', '<p>Type, beerat Ukuran Bisa Dipesan By Request.</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper,</em></strong><strong><em>Klaten</em></strong></p>\r\n<p><strong><em>Jawa Tengah&nbsp;</em></strong></p>\r\n<p><strong><em>Indonesia</em></strong></p>\r\n<p>&nbsp;</p>'),
 (24, 'barbel-jreg-10kg', 'BARBEL Jreg 10kg', '6822b56b-aea6-491b-a21e-40293448a859.JPG', '<p>Model, Diameter&nbsp;dan&nbsp;Ukuran Bisa Dipesan By Request.</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper,</em></strong><strong><em>Klaten</em></strong></p>\r\n<p><strong><em>Jawa Tengah&nbsp;</em></strong></p>\r\n<p><strong><em>Indonesia</em></strong></p>\r\n<p>&nbsp;</p>'),
 (25, 'barbel-jreg-5kg', 'Barbel jreg 5kg', 'a7c0271a-e817-42df-9021-2d5683afb169.JPG', '<p>Model, Diameter&nbsp;dan&nbsp;Ukuran Bisa Dipesan By Request.</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper,</em></strong><strong><em>Klaten</em></strong></p>\r\n<p><strong><em>Jawa Tengah&nbsp;</em></strong></p>\r\n<p><strong><em>Indonesia</em></strong></p>\r\n<p>&nbsp;</p>'),
-(26, 'barbel-tangan-10kg', 'Barbel Tangan 10kg', 'PHOTO-2018-07-07-20-53-561.jpg', '<p>Model, Diameter&nbsp;dan&nbsp;Ukuran Bisa Dipesan By Request.</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper,</em></strong><strong><em>Klaten</em></strong></p>\r\n<p><strong><em>Jawa Tengah&nbsp;</em></strong></p>\r\n<p><strong><em>Indonesia</em></strong></p>\r\n<p>&nbsp;</p>');
+(26, 'barbel-tangan-10kg', 'Barbel Tangan 10kg', 'PHOTO-2018-07-07-20-53-561.jpg', '<p>Model, Diameter&nbsp;dan&nbsp;Ukuran Bisa Dipesan By Request.</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper,</em></strong><strong><em>Klaten</em></strong></p>\r\n<p><strong><em>Jawa Tengah&nbsp;</em></strong></p>\r\n<p><strong><em>Indonesia</em></strong></p>\r\n<p>&nbsp;</p>'),
+(27, 'barbel-pemberat', 'Barbel Pemberat', 'PHOTO-2018-07-12-12-23-19.jpg', '<p>Bentuk dan ukuran&nbsp;dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(28, 'cetakan-kue', 'Cetakan Kue ', 'PHOTO-2018-07-14-08-48-56.jpg', '<p>Bentuk dan ukuran&nbsp;dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>'),
+(29, 'barbel-pemberat-25kg', 'Barbel Pemberat 2,5kg', 'PHOTO-2018-07-14-08-51-45.jpg', '<p>Bentuk dan ukuran berat dapat di pesan by request , hubungi kami..</p>\r\n<p><strong><em>Telp/WA: 081229867117, 081221687900,</em></strong><br /><strong><em><a href=\"mailto:cvsudirmanlogam@gmail.com\">email:&nbsp;</a><a href=\"mailto:cvsudirmanlogam@gmail.com\">cvsudirmanlogam@gmail.com</a></em></strong></p>\r\n<p><strong><em>instagram : @cor.logam</em></strong></p>\r\n<p><strong><em>Alamat: bakalan ,ceper ,Klaten.</em></strong></p>');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `karyawan`
---
-
-CREATE TABLE `karyawan` (
-  `id_karyawan` int(11) NOT NULL,
-  `slug_karyawan` varchar(255) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `jabatan` varchar(255) NOT NULL,
-  `image` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `karyawan`
---
-
-INSERT INTO `karyawan` (`id_karyawan`, `slug_karyawan`, `nama`, `jabatan`, `image`) VALUES
-(1, '3-galang-noveriyanto', 'Galang Noveriyanto ', 'Divisi Produksi', 'IMG_0331.jpg'),
-(2, '3-dwi-istanto', 'Dwi Istanto', 'Quality Control', 'IMG_0303_(1).jpg'),
-(3, 'zaenal-abidin', 'Zaenal Abidin', 'Divisi Pengiriman', 'IMG_0305_(1).jpg'),
-(4, 'sarah', 'Sarah ', 'Administrasi Keuangan', 'IMG_0307_(1).jpg'),
-(5, 'fitri', 'Fitri', 'Administrasi Keuangan', 'IMG_0313_(1).jpg'),
-(6, 'yuli', 'Yuli', 'Administrasi Barang', 'IMG_0314_(1).jpg');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `kontak`
+-- Struktur dari tabel `kontak`
 --
 
 CREATE TABLE `kontak` (
@@ -238,7 +254,7 @@ CREATE TABLE `kontak` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kontak`
+-- Dumping data untuk tabel `kontak`
 --
 
 INSERT INTO `kontak` (`id_kontak`, `name`, `email`, `subject`, `message`, `date`) VALUES
@@ -248,7 +264,34 @@ INSERT INTO `kontak` (`id_kontak`, `name`, `email`, `subject`, `message`, `date`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pesan_direktur`
+-- Struktur dari tabel `organisasi`
+--
+
+CREATE TABLE `organisasi` (
+  `id_organisasi` int(11) NOT NULL,
+  `slug_organisasi` varchar(255) NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `jabatan` varchar(255) NOT NULL,
+  `pesan` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data untuk tabel `organisasi`
+--
+
+INSERT INTO `organisasi` (`id_organisasi`, `slug_organisasi`, `nama`, `jabatan`, `pesan`, `image`) VALUES
+(1, '3-galang-noveriyanto', 'Galang Noveriyanto ', 'Divisi Produksi', 'test', 'IMG_0331.jpg'),
+(2, '3-dwi-istanto', 'Dwi Istanto', 'Quality Control', 'test', 'IMG_0303_(1).jpg'),
+(3, 'zaenal-abidin', 'Zaenal Abidin', 'Divisi Pengiriman', 'test', 'IMG_0305_(1).jpg'),
+(4, 'sarah', 'Sarah ', 'Administrasi Keuangan', 'test', 'IMG_0307_(1).jpg'),
+(5, 'fitri', 'Fitri', 'Administrasi Keuangan', 'test', 'IMG_0313_(1).jpg'),
+(6, 'yuli', 'Yuli', 'Administrasi Barang', 'test', 'IMG_0314_(1).jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pesan_direktur`
 --
 
 CREATE TABLE `pesan_direktur` (
@@ -259,7 +302,7 @@ CREATE TABLE `pesan_direktur` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pesan_direktur`
+-- Dumping data untuk tabel `pesan_direktur`
 --
 
 INSERT INTO `pesan_direktur` (`id_pesan_direktur`, `slug_pesan_direktur`, `image`, `deskripsi`) VALUES
@@ -268,7 +311,7 @@ INSERT INTO `pesan_direktur` (`id_pesan_direktur`, `slug_pesan_direktur`, `image
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sekilas_perusahaan`
+-- Struktur dari tabel `sekilas_perusahaan`
 --
 
 CREATE TABLE `sekilas_perusahaan` (
@@ -279,16 +322,16 @@ CREATE TABLE `sekilas_perusahaan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `sekilas_perusahaan`
+-- Dumping data untuk tabel `sekilas_perusahaan`
 --
 
 INSERT INTO `sekilas_perusahaan` (`id_sekilas_perusahaan`, `slug_sekilas_perusahaan`, `image`, `deskripsi`) VALUES
-(1, 'sekilas-perusahaan', 'building-2.jpg', 'BPA (Badan Pengelola Aset ) KM UII adalah sebuah organisasi yang telah berkembang yang awal mulanya disebut Tim Kerja Pengelola Aset SCC UII yang pertama kali dibentuk tahun 2014. BPA KM UII dibentuk didasari kepentingan jangka Panjang Lembaga yaitu dalam upaya mewujudkan kemandirian Lembaga KM UII, serta proses perbaikan sistem kelembagaan sehingga dapat meningkatkan tata kelola organisasi .Usaha BPA yang awal mulanya hanya mengandalkan penyewaan SCC , perkembangan merambah pada usaha-usaha lain diantaranya pengelolaan jas almamater, layanan sistem informasi ,dan usaha strategis lainnya.\r\n\r\n');
+(1, 'sekilas-perusahaan', 'cv-sudirman_com_arsip_(2)1.jpg', 'Cv-sudirman.com Kami adalah sebuah perusahaan yang  bergerak dalam bidang jasa pengecoran Logam yang besar, \r\n     Berdiri sejak 20 tahun lebih Cv-Sudirman.com berhasil membangun komunikasi, melebarkan sayapnya didunia pengecoran logam nusantara dan mempunyai mitra yang  banyak  loyal terhadap industri pengecoran logam, \r\nSudah banyak yang memanfaatkan jasa pengecoran setengah jadi hingga finish di cv.sudirman. \r\nkami juga mempunyai workshop untuk membantu para pelangan untuk memudahkan menyelesaikan perakitan ataupun finishing, \r\n\r\n');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `slider`
+-- Struktur dari tabel `slider`
 --
 
 CREATE TABLE `slider` (
@@ -300,19 +343,41 @@ CREATE TABLE `slider` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `slider`
+-- Dumping data untuk tabel `slider`
 --
 
 INSERT INTO `slider` (`id_slider`, `slug_slider`, `judul`, `sub_judul`, `image`) VALUES
 (9, '10-selamat-datang', 'SELAMAT DATANG ', 'sudirman logam', 'sd13.jpg'),
-(10, '12-tradisional-pengecoran-yang-besar-dan-handal', 'tradisional pengecoran yang besar dan handal', 'kami siap membantu anda , anda kesulitan ?\r\nhubungi kami melalui chat online 24 jam di pojok kiri bawah', 'IMG_4191.JPG'),
-(11, 'tim-cv-sudirman', 'Tim cv-sudirman', 'siap membantu anda dalam penanganan kebutuhan Logam anda,  hubungi tim handal cv-sudirman', 'IMG_4242.JPG'),
-(12, '12-mengapa-memilih-kami', 'MENGAPA MEMILIH KAMI ??', 'Karena kami cv-sudirman berdedikasi tinggi dalam setiap proses kerja dan mengutamakan kepuasan konsumen dan yang terpenting adalah hasil dari casting / logam cor yang kami hasilkan sangat berkelas dan mempunyai daya jual tinggi.', 'IMG_4170.JPG');
+(10, '14-tradisional-pengecoran-yang-besar-dan-handal', 'tradisional pengecoran yang besar dan handal', 'kami siap membantu anda , anda kesulitan ?\r\nhubungi kami melalui chat online 24 jam di pojok kiri bawah', '0-1-IMG_0316.jpg'),
+(12, '12-mengapa-memilih-kami', 'MENGAPA MEMILIH KAMI ??', 'Karena kami cv-sudirman berdedikasi tinggi dalam setiap proses kerja dan mengutamakan kepuasan konsumen dan yang terpenting adalah hasil dari casting / logam cor yang kami hasilkan sangat berkelas dan mempunyai daya jual tinggi.', 'IMG_4170.JPG'),
+(14, '14-tim-cv-sudirman', 'Tim cv-sudirman ', 'siap membantu anda dalam penanganan kebutuhan Logam anda,  hubungi tim handal cv-sudirman', 'IMG_4167.JPG');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `t_notes`
+--
+
+CREATE TABLE `t_notes` (
+  `date` date NOT NULL,
+  `notes` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `t_notes`
+--
+
+INSERT INTO `t_notes` (`date`, `notes`) VALUES
+('2018-07-24', 'testt'),
+('2018-07-25', 'uhjhhh'),
+('2018-07-10', 'ddd'),
+('2018-07-04', 'test'),
+('2018-07-08', 'hahahaha');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -324,17 +389,16 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id_user`, `slug_user`, `username`, `password`, `email`) VALUES
-(1, '', 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'info@cv-sudirman.com'),
-(2, 'test', 'test', 'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3', 'test@cv-sudirman.com');
+(4, 'admin', 'admin', 'd8ed7457a3464c783a4485c5173c8adce2210c1a', 'rikyjawaa@yahoo.com');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `visi_misi`
+-- Struktur dari tabel `visi_misi`
 --
 
 CREATE TABLE `visi_misi` (
@@ -345,11 +409,11 @@ CREATE TABLE `visi_misi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `visi_misi`
+-- Dumping data untuk tabel `visi_misi`
 --
 
 INSERT INTO `visi_misi` (`id_visi_misi`, `slug_visi_misi`, `image`, `deskripsi`) VALUES
-(1, 'visi-misi', '111.jpg', 'Visi \r\n<br>\r\n<br>\r\nMenjadi organisasi yang secara berkelanjutan mengeangkandiri dan memberikan manfaat kepada umat dalam rangkmewujudkan tujuan Lembaga KM UII melalui pengellaan asset Lembaga yang professional,akunabel dan transparan.\r\n<br>\r\n<br>\r\nMisi\r\n<br>\r\n<br>\r\n<ol>\r\n<li>Mengoptimalkan pengelolaan asset lembaga berdasar pnsip-prinsip badan usaha yang professional dan akuntabel</li>\r\n<li>Memrkuat sumber daya keuangan Lembaga KM UII melalui sumbangan bagi hasil usaha</li>\r\n<li>Mewujudkan SDM anggota yang unggul ,terampil , professional dalam menjalankan fungsi perannya sebagai pengelola asset Lembaga</li>\r\n<li>Mengoptimalkan pemanfaatkan sistem informasi,kearsipan dan administrasi data organisasi</li>\r\n<li>Menyelenggarakan usaha-usaha yang mampu mciptakemanfaatan umum lainnya bagi public mahasiswa dan umum</li>\r\n</ol>\r\n\r\n');
+(1, 'visi-misi', 'stevejobs1.jpg', 'Visi : \r\nMenjadi perusahaan pengecoran logam Bermutu tinggi di Indonesia yang memperhatikan kualitas, kepuasan konsumen, dan kesejahteraan karyawan.\r\n<br>\r\n<br>\r\nMisi :\r\n<ol>\r\n<li>Menyediakan segala macam produk hasil pengecoran logam yang memiliki kualitas tinggi dengan harga bersaing</li>\r\n<li>Menyediakan sarana dan prasarana untuk menunjang efektivitas dan efisiensi produksi</li>\r\n<li>Membina hubungan yang baik dengan konsumen, supplier, dan seluruh lingkungan eksternal maupun internal perusahaan agar tercipta lingkungan kerja yang baik dan harmonis</li>\r\n<li>Terus mengikuti perkembangan teknologi yang dapat meningkatkan produktivitas dan kapabilitas perusahaan</li>\r\n</ol>\r\n\r\n');
 
 --
 -- Indexes for dumped tables
@@ -366,6 +430,12 @@ ALTER TABLE `config`
 --
 ALTER TABLE `galeri_foto`
   ADD PRIMARY KEY (`id_galeri_foto`);
+
+--
+-- Indexes for table `galeri_kategori`
+--
+ALTER TABLE `galeri_kategori`
+  ADD PRIMARY KEY (`id_galeri_kategori`);
 
 --
 -- Indexes for table `galeri_video`
@@ -386,16 +456,16 @@ ALTER TABLE `industri_kecil`
   ADD PRIMARY KEY (`id_industri_kecil`);
 
 --
--- Indexes for table `karyawan`
---
-ALTER TABLE `karyawan`
-  ADD PRIMARY KEY (`id_karyawan`);
-
---
 -- Indexes for table `kontak`
 --
 ALTER TABLE `kontak`
   ADD PRIMARY KEY (`id_kontak`);
+
+--
+-- Indexes for table `organisasi`
+--
+ALTER TABLE `organisasi`
+  ADD PRIMARY KEY (`id_organisasi`);
 
 --
 -- Indexes for table `pesan_direktur`
@@ -436,74 +506,66 @@ ALTER TABLE `visi_misi`
 --
 ALTER TABLE `config`
   MODIFY `id_config` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `galeri_foto`
 --
 ALTER TABLE `galeri_foto`
-  MODIFY `id_galeri_foto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
-
+  MODIFY `id_galeri_foto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+--
+-- AUTO_INCREMENT for table `galeri_kategori`
+--
+ALTER TABLE `galeri_kategori`
+  MODIFY `id_galeri_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `galeri_video`
 --
 ALTER TABLE `galeri_video`
-  MODIFY `id_galeri_video` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
+  MODIFY `id_galeri_video` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `industri_besar`
 --
 ALTER TABLE `industri_besar`
-  MODIFY `id_industri_besar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
-
+  MODIFY `id_industri_besar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 --
 -- AUTO_INCREMENT for table `industri_kecil`
 --
 ALTER TABLE `industri_kecil`
-  MODIFY `id_industri_kecil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
-
---
--- AUTO_INCREMENT for table `karyawan`
---
-ALTER TABLE `karyawan`
-  MODIFY `id_karyawan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
+  MODIFY `id_industri_kecil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 --
 -- AUTO_INCREMENT for table `kontak`
 --
 ALTER TABLE `kontak`
   MODIFY `id_kontak` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
+--
+-- AUTO_INCREMENT for table `organisasi`
+--
+ALTER TABLE `organisasi`
+  MODIFY `id_organisasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `pesan_direktur`
 --
 ALTER TABLE `pesan_direktur`
   MODIFY `id_pesan_direktur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `sekilas_perusahaan`
 --
 ALTER TABLE `sekilas_perusahaan`
   MODIFY `id_sekilas_perusahaan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
-  MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
+  MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `visi_misi`
 --
 ALTER TABLE `visi_misi`
   MODIFY `id_visi_misi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
