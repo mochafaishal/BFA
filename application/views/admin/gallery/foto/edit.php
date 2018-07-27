@@ -97,9 +97,9 @@ $Kategori = $this->mGaleri->listGaleriKategori();
         <select name="kategori" class="form-control">
         <option value="<?php echo $GaleriFoto['kategori'] ?>"><?php echo $GaleriFoto['kategori'] ?></option>
         <option value="">-</option>
-        <?php foreach($Kategori as $list) { ?>
-          <option value="<?php echo $list['nama_kategori'] ?>"><?php echo $list['nama_kategori'] ?></option>
-        <?php } ?>
+        <?php $i=1; foreach($Kategori as $list) { ?>
+          <option value="<?php echo $i; ?>"><?php echo $list['nama_kategori'] ?></option>
+        <?php $i++; } ?>
         </select>
     </div>
 </div>
