@@ -84,12 +84,12 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
     <div class="container">
       <div class="row">
         <div class="col-xs-2">
-          <div id="colorlib-logo"><a href="<?php echo base_url('home2'); ?>"><img src="<?php echo base_url(); ?>assets2/images/bpa.png" width="250px" height="70px"/></a></div>
+          <div id="colorlib-logo"><a href="<?php echo base_url('home'); ?>"><img src="<?php echo base_url(); ?>assets2/images/bpa.png" width="250px" height="70px"/></a></div>
 
         </div>
         <div class="col-xs-10 text-right menu-1">
           <ul>
-            <li class="active"><a href="<?php echo base_url('home2'); ?>">Home</a></li>
+            <li class="active"><a href="<?php echo base_url('home'); ?>">Home</a></li>
             <li><a href="<?php echo base_url('about'); ?>">Tentang Kami</a></li>
             <li><a href="<?php echo base_url('jadwal'); ?>">Jadwal</a></li>
             <li class="has-dropdown">
@@ -164,9 +164,9 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
       </div>
       <div class="col-md-4 col-md-pull-4 animate-box">
         <div class="box text-center">
-          <span class="num">25</span>
-          <span class="yr">Years</span>
-          <span class="thin">Experience</span>
+          <span class="num">2014</span>
+          <span class="yr">RESMI</span>
+          <span class="thin">BERDIRI</span>
         </div>
       </div>
       <div class="col-md-4 animate-box">
@@ -182,7 +182,7 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
       <div class="col-md-4 animate-box colorlib-heading animate-box">
         <span class="sm">Works</span>
         <h2><span class="thin">Kegiatan</span> <span class="thick">BFA UII</span></h2>
-        <p>berikut adalah beberapa kegiatan yang sudah terlaksanan di BPA UII.</p>
+        <p>Berikut adalah beberapa kegiatan yang sudah terlaksanan di BPA UII.</p>
       </div>
       <div class="col-md-7 col-md-push-1">
         <div class="row">
@@ -238,7 +238,7 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
       <div class="col-md-4 animate-box colorlib-heading animate-box">
         <span class="sm">What We Do?</span>
         <h2><span class="thin">Tata Cara</span> <span class="thick">Peminjaman</span></h2>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name</p>
+        <p>Bagaimana sih cara meminjam asset UII? Nah, disamping merupakan alur tata cara peminjamannya. Silahkan di cek.</p>
       </div>
       <div class="col-md-8">
         <div class="row">
@@ -418,10 +418,10 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
       <div class="col-md-3 col-md-push-1">
         <h4>Contact Info</h4>
         <ul class="colorlib-footer-links">
-          <li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
-          <li><a href="tel://1234567920"><i class="icon-phone"></i> + 1235 2355 98</a></li>
-          <li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> info@yoursite.com</a></li>
-          <li><a href="http://luxehotel.com"><i class="icon-location4"></i> yourwebsite.com</a></li>
+          <li>Universitas Islam Indonesia, <br> Yogyakarta, Sleman, Kaliurang KM. 24</li>
+          <li><a href="tel://1234567920"><i class="icon-phone"></i> 0274-72192</a></li>
+          <li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> bpa@uii.ac.id</a></li>
+          <li><a href="http://luxehotel.com"><i class="icon-location4"></i> bpa-kmuii.ac.id</a></li>
         </ul>
       </div>
     </div>
