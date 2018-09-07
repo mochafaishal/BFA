@@ -21,7 +21,7 @@
   <!-- About Three start -->
   <section class="about-area about-area-three">
       <div class="container">
-          <div class="row">
+          <!-- <div class="row">
               <div class="col-md-6">
                   <div class="about-three-col">
                       <img src="<?php echo base_url('assets/upload/image/'.$sekilasperusahaan['image']);?>" alt="">
@@ -33,7 +33,7 @@
                      <p class="text-justify"><?php echo $sekilasperusahaan['deskripsi'] ?></p>
                  </div>
               </div>
-          </div>
+          </div> -->
           <div class="row">
               <div class="col-md-6">
                  <div class="about-three-col">

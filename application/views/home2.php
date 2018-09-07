@@ -328,27 +328,6 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
   </div>
 </div>
 
-<div id="colorlib-about">
-  <div class="container">
-      <div class="col-md-12 ">
-        <div class="row">
-          <?php foreach($organisasi as $organisasi_list): ?>
-          <div class="wrap-2">
-            <div class="col-md-4 text-center animate-box">
-              <div class="staff" class="staff-img" style="background-image: url('<?php echo base_url();?>assets/upload/image/<?php echo $organisasi_list['image'];?>');">
-                <a href="#" class="desc">
-                  <h3><?php echo $organisasi_list['nama']; ?></h3>
-                  <span><?php echo $organisasi_list['jabatan']; ?></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        <?php endforeach; ?>
-
-        </div>
-      </div>
-  </div>
-</div>
 <div id="colorlib-testimony" class="colorlib-light-grey">
   <div class="container">
     <div class="row">
