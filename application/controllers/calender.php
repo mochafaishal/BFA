@@ -1,33 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Calender extends CI_Controller {
+	
 	function __construct(){
 		parent::__construct();
 		$this->load->library('calendar', $this->_setting());
 	}
-
-	function index($year = null, $mon = null){
-		$site  		= $this->mConfig->list_config();
-		$slider     = $this->mSlider->listSlider();
-		$sekilasperusahaan = $this->mTentangKami->listSekilasPerusahaan();
-		$organisasi = $this->mOrganisasi->listOrganisasi();
-		$year = (empty($year) || !is_numeric($year))?  date('Y') :  $year;
-		$mon  = (empty($mon) || !is_numeric($mon))?  date('m') :  $mon;
-		
-		$date = $this->mynotes->getCalendar($year, $mon);
-		$data = array(
-					'title'	=> 'Home',
-                    'site'   => $site,
-                    'sliders' => $slider,
-					'active' => 'home',
-					'sekilasperusahaan' => $sekilasperusahaan,
-					'organisasi' => $organisasi,
-					'notes' => $this->calendar->generate($year, $mon, $date),
-					'year'  => $year,
-					'mon'   => $mon,
-				);
-		$this->load->view('home2', $data);
-	}
+	
 	
 	// untuk konversi nama bulan
 	function _month($mon){
@@ -49,15 +28,36 @@ class Home extends CI_Controller {
 		return $mon;
 	}
 	
+
+	function index(){
+		redirect('calender/notes');
+	}
+	
+	// fungsi utama untuk menampilkan kalender catatan
+	function notes($year = null, $mon = null){
+		$site = $this->mConfig->list_config();
+		$year = (empty($year) || !is_numeric($year))?  date('Y') :  $year;
+		$mon  = (empty($mon) || !is_numeric($mon))?  date('m') :  $mon;
+		
+		$date = $this->mynotes->getCalendar($year, $mon);
+		$data = array(
+					'active' => 'calender',
+					'notes' => $this->calendar->generate($year, $mon, $date),
+					'year'  => $year,
+					'mon'   => $mon,
+				);
+		$this->load->view('home2', $data);
+	}
+	
 	// setting tampilan kalender
 	function _setting(){
 		return array(
 			'start_day' 		=> 'monday',
 			'show_next_prev' 	=> true,
-			'next_prev_url' 	=> site_url('home'),
+			'next_prev_url' 	=> site_url('calender/notes'),
 			'month_type'   		=> 'long',
             'day_type'     		=> 'short',
-			'template' 			=> '{table_open}<table class="date" width="95%">{/table_open}
+			'template' 			=> '{table_open}<table class="date" width="80%">{/table_open}
 								   {heading_row_start}&nbsp;{/heading_row_start}
 								   {heading_previous_cell}<caption><a href="{previous_url}" class="prev_date" title="Previous Month">&lt;&lt;</a>{/heading_previous_cell}
 								   {heading_title_cell}{heading}{/heading_title_cell}
@@ -78,4 +78,3 @@ class Home extends CI_Controller {
 								   {table_close}</tbody></table>{/table_close}');
 	}
 }
-?>
