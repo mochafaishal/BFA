@@ -73,6 +73,11 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
 
 <!-- Modernizr JS -->
 <script src="<?php echo base_url(); ?>assets2/js/modernizr-2.6.2.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/kalender/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/kalender/css/colorbox.css"/>
+    <script type="text/javascript" src="<?php echo base_url();?>assets/kalender/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>assets/kalender/js/jquery.colorbox-min.js"></script>
 <!-- FOR IE9 below -->
 <!--[if lt IE 9]>
 <script src="<?php echo base_url(); ?>assets2/js/respond.min.js"></script>
@@ -328,12 +333,31 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
   </div>
 </div>
 
+
+<div id="colorlib-project">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 animate-box colorlib-heading animate-box">
+        <span class="sm">Works</span>
+        <h2><span class="thin">Kegiatan</span> <span class="thick">BFA UII</span></h2>
+        <p>Berikut adalah beberapa kegiatan yang sudah terlaksanan di BPA UII.</p>
+      </div>
+      <div class="col-md-7 col-md-push-1">
+        <div align="center">
+          <?php echo $notes?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div id="colorlib-testimony" class="colorlib-light-grey">
   <div class="container">
     <div class="row">
       <div class="col-md-4 animate-box colorlib-heading animate-box">
-        <span class="sm">Testimonial</span>
-        <h2><span class="thin">Pesan</span> <span class="thick">Pengurus BPA</span></h2>
+        <span class="sm"></span>
+        <h2><span class="thin">Tugas Pokok</span> <span class="thick">Pengurus BPA</span></h2>
       </div>
       <div class="col-md-7 col-md-push-1">
         <div class="row animate-box">
