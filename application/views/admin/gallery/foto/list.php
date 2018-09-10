@@ -12,7 +12,7 @@ echo validation_errors('<div class="alert alert-success">','</div>');
 
 <!--  Modals-->
 <div class="panel-body">
-<p><a href="<?php echo base_url('admin/gallery/galeri_foto/create') ?>" class="btn btn-primary"><i class="fa fa-plus"></i> Create New Slider</a></p>
+<p><a href="<?php echo base_url('admin/gallery/galeri_foto/create') ?>" class="btn btn-primary"><i class="fa fa-plus"></i> Create New Photo</a></p>
 
 
 
