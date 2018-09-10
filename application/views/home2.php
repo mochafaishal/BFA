@@ -356,8 +356,8 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
   <div class="container">
     <div class="row">
       <div class="col-md-4 animate-box colorlib-heading animate-box">
-        <span class="sm">Testimonial</span>
-        <h2><span class="thin">Pesan</span> <span class="thick">Pengurus BPA</span></h2>
+        <span class="sm"></span>
+        <h2><span class="thin">Tugas Pokok</span> <span class="thick">Pengurus BPA</span></h2>
       </div>
       <div class="col-md-7 col-md-push-1">
         <div class="row animate-box">
