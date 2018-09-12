@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 27 Jul 2018 pada 11.00
--- Versi Server: 10.1.21-MariaDB
--- PHP Version: 5.6.30
+-- Generation Time: 12 Sep 2018 pada 07.15
+-- Versi Server: 10.1.29-MariaDB
+-- PHP Version: 7.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -326,7 +328,7 @@ CREATE TABLE `sekilas_perusahaan` (
 --
 
 INSERT INTO `sekilas_perusahaan` (`id_sekilas_perusahaan`, `slug_sekilas_perusahaan`, `image`, `deskripsi`) VALUES
-(1, 'sekilas-perusahaan', 'cv-sudirman_com_arsip_(2)1.jpg', 'Cv-sudirman.com Kami adalah sebuah perusahaan yang  bergerak dalam bidang jasa pengecoran Logam yang besar, \r\n     Berdiri sejak 20 tahun lebih Cv-Sudirman.com berhasil membangun komunikasi, melebarkan sayapnya didunia pengecoran logam nusantara dan mempunyai mitra yang  banyak  loyal terhadap industri pengecoran logam, \r\nSudah banyak yang memanfaatkan jasa pengecoran setengah jadi hingga finish di cv.sudirman. \r\nkami juga mempunyai workshop untuk membantu para pelangan untuk memudahkan menyelesaikan perakitan ataupun finishing, \r\n\r\n');
+(1, 'sekilas-perusahaan', 'cv-sudirman_com_arsip_(2)1.jpg', 'Cv-sudirman.com Kami adalah sebuah perusahaan yang  bergerak dalam bidang jasa pengecoran Logam yang besar, \r\n     Berdiri sejak 20 tahun lebih Cv-Sudirman.com berhasil membangun komunikasi, melebarkan sayapnya didunia pengecoran logam nusantara dan mempunyai mitra yang  banyak  loyal terhadap industri pengecoran logam, \r\nSudah banyak yang memanfaatkan jasa pengecoran setengah jadi hingga finish di cv.sudirman. \r\nkami juga mempunyai workshop untuk membantu para pelangan untuk memudahkan menyelesaikan perakitan ataupun finishing,  <a href=\"http://google.com\">Tambahan</a>\r\n\r\n');
 
 -- --------------------------------------------------------
 
@@ -372,7 +374,8 @@ INSERT INTO `t_notes` (`date`, `notes`) VALUES
 ('2018-07-25', 'uhjhhh'),
 ('2018-07-10', 'ddd'),
 ('2018-07-04', 'test'),
-('2018-07-08', 'hahahaha');
+('2018-07-08', 'hahahaha'),
+('2018-09-03', '');
 
 -- --------------------------------------------------------
 
@@ -506,66 +509,80 @@ ALTER TABLE `visi_misi`
 --
 ALTER TABLE `config`
   MODIFY `id_config` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `galeri_foto`
 --
 ALTER TABLE `galeri_foto`
   MODIFY `id_galeri_foto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+
 --
 -- AUTO_INCREMENT for table `galeri_kategori`
 --
 ALTER TABLE `galeri_kategori`
   MODIFY `id_galeri_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `galeri_video`
 --
 ALTER TABLE `galeri_video`
   MODIFY `id_galeri_video` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
 -- AUTO_INCREMENT for table `industri_besar`
 --
 ALTER TABLE `industri_besar`
   MODIFY `id_industri_besar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
+
 --
 -- AUTO_INCREMENT for table `industri_kecil`
 --
 ALTER TABLE `industri_kecil`
   MODIFY `id_industri_kecil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
 --
 -- AUTO_INCREMENT for table `kontak`
 --
 ALTER TABLE `kontak`
   MODIFY `id_kontak` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT for table `organisasi`
 --
 ALTER TABLE `organisasi`
   MODIFY `id_organisasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT for table `pesan_direktur`
 --
 ALTER TABLE `pesan_direktur`
   MODIFY `id_pesan_direktur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `sekilas_perusahaan`
 --
 ALTER TABLE `sekilas_perusahaan`
   MODIFY `id_sekilas_perusahaan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
   MODIFY `id_slider` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
 -- AUTO_INCREMENT for table `visi_misi`
 --
 ALTER TABLE `visi_misi`
   MODIFY `id_visi_misi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
