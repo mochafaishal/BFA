@@ -80,10 +80,14 @@ echo validation_errors('<div class="alert alert-success">','</div>');
 <form action="<?php echo base_url('admin/about/sekilas_perusahaan') ?>" method="post" enctype="multipart/form-data">
 <div class="col-md-6">
 	<input type="hidden" name="id_sekilas_perusahaan" value="<?php echo $SekilasPerusahaan['id_sekilas_perusahaan'] ?>">
-    <div class="alert alert-warning"><label>Important</label>
+    <div class="alert alert-warning"><label>Important</label><br>
        <i>
           <strong>Size Image</strong> : 700px X 500px
+					<br><br>
+					<strong>Add link</strong> :
+					<xmp><a href="Link">teks</a></xmp>
        </i>
+
     </div>
     <div class="form-group">
         <label>Upload Gambar</label>

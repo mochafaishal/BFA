@@ -24,7 +24,7 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" href="<?php echo base_url('home'); ?>">
-                                <img src="<?php echo base_url(); ?>assets/images/bpa.png" alt="CV-Sudirman" width="300px" height="70px"/>
+                                <img src="<?php echo base_url(); ?>assets/images/bpa.png" alt="CV-Sudirman" height="70px"/>
                             </a>
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations="fadeInUp">
