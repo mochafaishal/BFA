@@ -1,6 +1,7 @@
 <?php
-$organisasi = $this->mOrganisasi->listOrganisasi();
-    $site = $this->mConfig->list_config();
+    $organisasi = $this->mOrganisasi->listOrganisasi();
+    $site       = $this->mConfig->list_config();
+    $kegiatan   = $this->mKegiatan->listKegiatan();
 ?>
 
 <head>
@@ -193,42 +194,21 @@ $organisasi = $this->mOrganisasi->listOrganisasi();
         <div class="row">
           <div class="col-md-12 animate-box">
             <div class="owl-carousel owl-carousel2 project-wrap">
+              <?php $i=1; foreach($kegiatan as $list) { ?>
               <div class="item">
-                <a href="" class="project image-popup-link" style="background-image: url(<?php echo base_url(); ?>assets2/images/35.jpg); ">
+                <a href="" class="project image-popup-link" style="background-image: url(<?php echo base_url('assets/upload/image/'.$list['image']); ?>">
                   <div class="desc-t">
                     <div class="desc-tc">
                       <div class="desc">
-                        <h3><span><small>1</small></span> LDKO LEM FTI UII</h3>
-                        <p>Kegiatan LDKO LEM FTI UII sedang Berlangsung</p>
+                        <h3><span><small><?php echo $i ?></small></span> <?php echo $list['judul'];?></h3><br>
+                        <p><?php echo $list['sub_judul'];?></p>
                       </div>
                     </div>
                   </div>
                 </a>
               </div>
-              <div class="item">
-                <a  class="project image-popup-link" style="background-image: url(<?php echo base_url(); ?>assets2/images/32.jpg) ">
-                  <div class="desc-t">
-                    <div class="desc-tc">
-                      <div class="desc">
-                        <h3><span><small>2</small></span> Kamar Para Peserta</h3>
-                        <p>Kamar bagi peserta kegiatan yang rapih dan nyaman</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="images/34.jpg" class="project image-popup-link" style="background-image: url(<?php echo base_url(); ?>assets2/images/34.jpg);">
-                  <div class="desc-t">
-                    <div class="desc-tc">
-                      <div class="desc">
-                        <h3><span><small>3</small></span> Sambutan oleh pembicara</h3>
-                        <p>Pembicara LDKO sedang melakukan seminar mengenai kepemimpinan</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
+              <?php $i++; } ?>
+
             </div>
           </div>
         </div>

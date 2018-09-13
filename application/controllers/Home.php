@@ -11,6 +11,7 @@ class Home extends CI_Controller {
 		$slider     = $this->mSlider->listSlider();
 		$sekilasperusahaan = $this->mTentangKami->listSekilasPerusahaan();
 		$organisasi = $this->mOrganisasi->listOrganisasi();
+		$kegiatan   = $this->mKegiatan->listKegiatan();
 		$year = (empty($year) || !is_numeric($year))?  date('Y') :  $year;
 		$mon  = (empty($mon) || !is_numeric($mon))?  date('m') :  $mon;
 		

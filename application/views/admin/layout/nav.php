@@ -24,9 +24,11 @@
             <li><a href="<?php echo base_url('admin/gallery/galeri_video') ?>">Video</a></li>
         </ul>
     </li>
+    <li><a href="<?php echo base_url('admin/kegiatan') ?>"><i class="fa fa-plus-square"></i> Kegiatan</a></li>
     <li><a href="<?php echo base_url('admin/jadwal/mynotes') ?>"><i class="fa fa-calendar"></i> Jadwal</a></li>
     <li><a href="<?php echo base_url('admin/data_user') ?>"><i class="fa fa-users"></i> Data User</a></li>
-	<li><a href="<?php echo base_url('admin/organisasi') ?>"><i class="fa fa-users"></i>Struktur Organisasi</a></li>
+	<li><a href="<?php echo base_url('admin/organisasi') ?>"><i class="fa fa-users"></i> Struktur Organisasi</a></li>
+    <li><a href="<?php echo base_url('admin/slider') ?>"><i class="fa fa-film"></i> Slider</a></li>
 	<li><a href="<?php echo base_url('admin/kontak') ?>"><i class="fa fa-envelope-o"></i> Kontak</a></li>
     <li><a href="<?php echo base_url('admin/login/logout') ?>"><i class="fa fa-close"></i> Logout</a></li>
 
